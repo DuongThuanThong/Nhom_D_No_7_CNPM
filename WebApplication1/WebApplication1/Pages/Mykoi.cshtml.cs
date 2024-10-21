@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebApplication1.Pages
 {
-    public class IndexModel : PageModel
+    public class MykoiModel : PageModel
     {
         public void OnGet()
         {
