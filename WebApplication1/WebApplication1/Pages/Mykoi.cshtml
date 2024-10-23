@@ -1,0 +1,135 @@
+﻿@page
+@model WebApplication1.Pages.MykoiModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>My Koi</title>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="navbar">
+        <!--Navigation-->
+        <ul class="nav-list ">
+            <li class="nav-item">
+                <a href="#">
+                    <img src="~/img/user.png" width=40px height=40px />
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" style="font-size: 20px;">Nguyễn Văn A</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container-mykoi">
+        <h2 class="title-mykoi">My Koi</h2>
+        <button style="background-color: orange; width: 50px; height: 50px;" onclick="showForm()">+</button>
+
+        <div id="add-koi-form">
+            <div class="form-header">
+                <h2 style="border-bottom: 1px solid black;">Add one Koi:</h2>
+                <button onclick="hideForm()">X</button>
+            </div>
+
+            <div style="border: 1px dashed black;">
+                <label for="koiImage">Add Image:</label>
+                <input type="file" id="koiImage" accept="image/*">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter name">
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="Enter age">
+
+                <label for="length">Length (cm):</label>
+                <input type="text" id="length" placeholder="Enter length">
+
+                <label for="weight">Weight (g):</label>
+                <input type="text" id="weight" placeholder="Enter weight">
+
+                <label for="sex">Sex:</label>
+                <input type="text" id="sex" placeholder="Enter sex">
+
+                <label for="pond">Pond:</label>
+                <input type="text" id="pond" placeholder="Main pond">
+
+                <label for="breeder">Breeder:</label>
+                <input type="text" id="breeder" placeholder="Enter breeder">
+
+                <button style="margin-left: 200px; margin-top: 15px; margin-bottom: 10px;" type="button" onclick="submitKoi()">Submit</button>
+            </div>
+        </div>
+
+        <div class="koi-list" id="koi-list"></div>
+    </div>
+
+    <!--JS-->
+    <script>
+    function showForm() {
+        document.getElementById('add-koi-form').style.display = 'block';
+    }
+
+    function hideForm() {
+        document.getElementById('add-koi-form').style.display = 'none';
+    }
+
+    // Đổi thành hàm deleteKoi để khớp với tên hàm gọi trong nút xóa
+    function deleteKoi(koiItem) {
+        koiItem.remove(); 
+    }
+
+    function submitKoi() {
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+        var length = document.getElementById('length').value;
+        var weight = document.getElementById('weight').value;
+        var sex = document.getElementById('sex').value;
+        var pond = document.getElementById('pond').value;
+        var breeder = document.getElementById('breeder').value;
+        var imageFile = document.getElementById('koiImage').files[0];
+
+        if (name && age && length && weight && sex && pond && breeder && imageFile) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                var koiItem = document.createElement('div');
+                koiItem.className = 'koi-item';
+                koiItem.innerHTML = `
+                    <img src="${e.target.result}" alt="Koi Image">
+                    <div class="koi-info">
+                        <strong>Name:</strong> ${name}<br>
+                        <strong>Age:</strong> ${age} years<br>
+                        <strong>Length:</strong> ${length} cm<br>
+                        <strong>Weight:</strong> ${weight} g<br>
+                        <strong>Sex:</strong> ${sex}<br>
+                        <strong>Pond:</strong> ${pond}<br>
+                        <strong>Breeder:</strong> ${breeder}
+                    </div>
+                    <button onclick="deleteKoi(this.parentElement)" style="background-color: red; color: white;">X</button>
+                `;
+
+                document.getElementById('koi-list').appendChild(koiItem);
+                document.getElementById('name').value = '';
+                document.getElementById('age').value = '';
+                document.getElementById('length').value = '';
+                document.getElementById('weight').value = '';
+                document.getElementById('sex').value = '';
+                document.getElementById('pond').value = '';
+                document.getElementById('breeder').value = '';
+                document.getElementById('koiImage').value = '';
+                hideForm();
+            };
+            reader.readAsDataURL(imageFile);
+        } else {
+            alert('Please fill out all fields and add an image.');
+        }
+    }
+    </script>
+</body>
+</html>
