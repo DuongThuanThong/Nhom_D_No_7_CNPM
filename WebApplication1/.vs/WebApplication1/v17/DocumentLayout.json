@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\mykoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\mykoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +35,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
-              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\favicon.ico",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "RelativeToolTip": "WebApplication1\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2024-10-21T06:26:09.179Z",
-              "EditorCaption": " - Icon [32x32, 32 bit, BMP]"
+              "Title": "Mykoi.cshtml",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Mykoi.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Mykoi.cshtml",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Mykoi.cshtml*",
+              "RelativeToolTip": "WebApplication1\\Pages\\Mykoi.cshtml*",
+              "ViewState": "AQIAAAwAAAAAAAAAAADwvyQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T09:13:47.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:05:14.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T08:54:18.431Z",
+              "EditorCaption": ""
             }
           ]
         },

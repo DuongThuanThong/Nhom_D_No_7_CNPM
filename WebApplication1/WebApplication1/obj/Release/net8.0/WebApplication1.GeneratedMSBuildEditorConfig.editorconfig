@@ -18,6 +18,7 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Koi-Tho\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< HEAD
 [D:/Koi-Tho/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -29,3 +30,12 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/Koi-Tho/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/MyPond.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlQb25kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
+=======
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Mykoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlrb2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+>>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
