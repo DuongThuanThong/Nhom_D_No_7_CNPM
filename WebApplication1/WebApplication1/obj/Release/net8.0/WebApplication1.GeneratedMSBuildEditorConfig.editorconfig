@@ -18,10 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Nhom_D_No_7_CNPM-main\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< HEAD
 [D:/Nhom_D_No_7_CNPM-main/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Nhom_D_No_7_CNPM-main/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Mykoi.cshtml]
+=======
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Mykoi.cshtml]
+>>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlrb2kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
