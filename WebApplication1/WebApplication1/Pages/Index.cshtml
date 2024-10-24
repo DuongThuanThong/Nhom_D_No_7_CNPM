@@ -1,10 +1,76 @@
-﻿@page
-@model IndexModel
+@page
+@model WebApplication1.Pages.Index
 @{
-    ViewData["Title"] = "Home page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="background"></div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div id="sign-up">
+        <h2>Sign Up</h2>
+        <div class="input-sign">
+            <input type="name" placeholder="Name" required>
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-sign">
+            <input type="email" placeholder="Email" required>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <div class="input-sign">
+            <input type="phone" placeholder="Phone" required>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="input-sign">
+            <input type="password" placeholder="Password" required>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <div class="input-sign">
+            <input type="password-confirm"placeholder="Password confirm" required>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+    
+        <button id="signUpButton" class="sign-up-button">Sign Up</button>
+
+
+
+        <script>
+        document.getElementById('signUpButton').addEventListener('click', function(event) {
+            // Lấy tất cả các input trong form
+            const inputs = document.querySelectorAll('.input-sign input');
+            let valid = true;
+
+            // Kiểm tra từng input có được điền hay chưa
+            inputs.forEach(function(input) {
+                if (!input.value) {
+                    valid = false;
+                    input.style.borderColor = 'red';  // Đổi màu viền input nếu chưa điền
+                } else {
+                    input.style.borderColor = '';     // Đặt lại viền nếu đã điền
+                }
+            });
+
+            if (valid) {
+                // Nếu tất cả các trường hợp lệ, thực hiện hành động (ở đây chỉ là thông báo)
+                alert('Form submitted successfully!');
+            } else {
+                // Ngăn việc gửi form nếu có trường nào chưa được điền
+                event.preventDefault();
+                alert('Please fill in all required fields.');
+            }
+        });
+        </script>
+
+</body>
+</html>
