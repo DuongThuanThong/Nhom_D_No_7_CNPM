@@ -6,4 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="bin - Copy\Debug\net8.0\" />
+    <Folder Include="obj - Copy\Debug\net8.0\refint\" />
+    <Folder Include="obj - Copy\Debug\net8.0\ref\" />
+    <Folder Include="obj - Copy\Debug\net8.0\staticwebassets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="WebApplication1 - Copy.csproj" />
+    <None Include="WebApplication1 - Copy.csproj.user" />
+  </ItemGroup>
+
 </Project>

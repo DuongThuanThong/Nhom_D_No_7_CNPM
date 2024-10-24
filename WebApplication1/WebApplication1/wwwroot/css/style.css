@@ -1,0 +1,113 @@
+﻿
+body {
+    background: url('/img/background.jpg')no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*--main--*/
+.title-login h1 {
+    font-size: 70px;
+    color: aqua;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.container input[type="email"], .container input[type="password"] {
+    outline: none;
+    font-size: .9em;
+    padding: 1em 3em 1em 1em;
+    border: none;
+    margin-bottom: 0.3em;
+    background: rgba(255, 255, 255, 0.85);
+    width: 82%;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 26%;
+    margin: 10em auto 12em;
+}
+
+.sub span {
+    color: lightblue;
+    font-size: 13px;
+}
+
+    .sub span a {
+        color: white;
+        font-size: 13px;
+    }
+
+.sub h6 a {
+    font-size: .9em;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: right;
+    display: inherit;
+}
+
+.sub {
+    margin-top: 1em;
+}
+
+.submit {
+    margin-top: 2em;
+}
+
+.blank {
+    position: relative;
+}
+
+input.pass {
+    margin-top: .7em;
+}
+
+.container input[type="submit"] {
+    color: white;
+    background: #ea2858;
+    border: none;
+    padding: .7em 0;
+    outline: none;
+    width: 44%;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    border-radius: 30px;
+}
+
+    .container input[type="submit"]:hover {
+        background: #fff;
+        color: black;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+/*--//main--*/
+
+
+
+

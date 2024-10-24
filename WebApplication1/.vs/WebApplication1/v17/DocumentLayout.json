@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Nhom_D_No_7_CNPM\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|c:\\users\\dell\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|c:\\users\\dell\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1705,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
@@ -26,15 +50,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\DELL\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\DELL\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-24T16:06:31.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
-              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\favicon.ico",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "RelativeToolTip": "WebApplication1\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2024-10-21T06:26:09.179Z",
-              "EditorCaption": " - Icon [32x32, 32 bit, BMP]"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAIBAwAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T16:02:26.577Z",
+              "EditorCaption": ""
             }
           ]
         },
