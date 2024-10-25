@@ -23,7 +23,7 @@ body {
     text-transform: uppercase;
 }
 
-.container input[type="email"], .container input[type="password"] {
+.container input[type="email"], .container input[type="password"], .container input[type="text"] {
     outline: none;
     font-size: .9em;
     padding: 1em 3em 1em 1em;
@@ -48,7 +48,7 @@ body {
     font-size: 13px;
 }
 
-    .sub span a {
+.sub span a {
         color: white;
         font-size: 13px;
     }
@@ -96,8 +96,14 @@ input.pass {
     -ms-transition: 0.5s all;
     border-radius: 30px;
 }
-
-    .container input[type="submit"]:hover {
+.eye-icon {
+    position: absolute;
+    right: 25px;
+    top: 53%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}  
+.container input[type="submit"]:hover {
         background: #fff;
         color: black;
         transition: 0.5s all;
@@ -106,7 +112,7 @@ input.pass {
         -moz-transition: 0.5s all;
         -ms-transition: 0.5s all;
     }
-/*--//main--*/
+
 
 
 
