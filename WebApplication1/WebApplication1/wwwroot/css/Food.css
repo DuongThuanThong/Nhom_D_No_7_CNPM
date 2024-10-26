@@ -1,0 +1,100 @@
+.container-myfood {
+    background-color: white;
+    padding: 20px 30px 300px;
+    margin-top: 130px;
+    z-index: 1;
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+}
+
+.title-myfood {
+    grid-template-columns: repeat(3, 200px); 
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+    
+.food {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px dashed black;
+}
+
+.fish-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.fish-row label, .fish-row input {
+    display: block; 
+    margin-bottom: 10px;
+    width: 100%; 
+}
+
+.fish-row-form {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#addFish {
+    margin-left: 270px;
+}
+
+#totalFood {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.fish-list {
+    margin-top: 20px;
+}
+
+.fish-row button {
+    padding: 2px 6px; 
+    background-color: #DD0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;  
+    width: 40px; 
+    text-align: center; 
+    
+   
+
+}
+
+.fish-row button:hover {
+    background-color: red;
+}

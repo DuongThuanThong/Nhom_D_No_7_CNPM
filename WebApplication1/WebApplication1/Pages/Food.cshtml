@@ -1,0 +1,151 @@
+@page
+@model WebApplication1.Pages.IndexModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Calculate</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Food.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="navbar">
+        <!--Navigation-->
+        <ul class="nav-list">
+            <li class="nav-item">  
+                <a href="#">  
+                    <img src="~/img/user.png" width="40px" height="40px"/>  
+                </a>  
+            </li> 
+            <li class="nav-item">  
+                <a href="#" style="font-size: 20px;">Nguyễn Văn A</a>  
+            </li>  
+        </ul>
+    </header>
+
+    <div class="container-myfood">
+        <h2 class="title-myfood"><u>Food Calculate</u></h2>
+        <button id="showFormBtn" style="background-color: orange; width: 50px; height: 50px;" onclick="showForm()">+</button>
+
+        <!-- Form nhập thông tin cá, ban đầu sẽ được ẩn -->
+        <div id="foodForm" class="food" style="display: none;">
+            <h2>Enter numbers food Koi:</h2>
+            <form id="fishForm">
+                <div id="fish-inputs">
+                    <div class="fish-row-form">
+                        <label>Koi Weight (kg):</label>
+                        <input type="number" class="weight" step="0.01" placeholder="Enter Koi Weight" required>
+                    </div>
+                    <div class="fish-row-form">
+                        <label>Feed Ratio (%):</label>
+                        <input type="number" class="percentage" step="0.01" placeholder="Enter Food Ratio" required>
+                    </div>
+                </div>
+                <button type="submit" id="addFish">Submit</button>
+            </form>
+        </div>
+
+        <!-- Hiển thị danh sách các cá đã nhập -->
+        <div id="fishList" class="fish-list"></div>
+
+        <h3 id="totalFood"></h3>
+    </div>
+
+    <!--JS-->
+    <script>
+        window.onload = function() {
+            // Lắng nghe sự kiện "submit" của form
+            document.getElementById('fishForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Ngăn form tự động submit
+
+                // Kiểm tra tính hợp lệ của form
+                const form = document.getElementById('fishForm');
+                if (!form.checkValidity()) {
+                    form.reportValidity(); // Hiển thị thông báo nếu có lỗi
+                } else {
+                    // Nếu hợp lệ, thêm cá vào danh sách
+                    addFishRow();
+                }
+            });
+        };
+
+        function showForm() {
+            const foodForm = document.getElementById('foodForm');
+            const button = document.getElementById('showFormBtn');
+            
+            if (foodForm.style.display === 'none') {
+                foodForm.style.display = 'block';
+                button.innerHTML = '-';  
+            } else {
+                foodForm.style.display = 'none';
+                button.innerHTML = '+';
+            }
+        }
+
+        let fishList = [];
+
+        // Hàm thêm cá
+        function addFishRow() {
+            const weight = document.querySelector('.weight').value;
+            const percentage = document.querySelector('.percentage').value;
+
+            const fish = {
+                weight: parseFloat(weight),
+                percentage: parseFloat(percentage),
+                id: Date.now() 
+            };
+
+            fishList.push(fish);
+            displayFishList();
+            calculateTotalFood();
+            clearInputFields();
+        }
+
+        // Hiển thị danh sách cá
+        function displayFishList() {
+            const fishListDiv = document.getElementById('fishList');
+            fishListDiv.innerHTML = ''; 
+
+            fishList.forEach(fish => {
+                const fishRow = document.createElement('div');
+                fishRow.classList.add('fish-row');
+                fishRow.innerHTML = `
+                    <p>Koi Weight: ${fish.weight} kg - Food Ratio: ${fish.percentage}%</p>
+                    <button onclick="removeFish(${fish.id})">X</button>
+                `;
+                fishListDiv.appendChild(fishRow);
+            });
+        }
+
+        // Xóa cá khỏi danh sách
+        function removeFish(id) {
+            fishList = fishList.filter(fish => fish.id !== id); 
+            displayFishList();
+            calculateTotalFood();
+        }
+
+        // Tính tổng lượng thức ăn
+        function calculateTotalFood() {
+            let totalFood = 0;
+
+            fishList.forEach(fish => {
+                totalFood += fish.weight * (fish.percentage / 100);
+            });
+
+            document.getElementById('totalFood').innerText = `Total Fish Koi Feed: ${totalFood.toFixed(2)} kg`;
+        }
+
+        // Xóa các trường input sau khi thêm cá
+        function clearInputFields() {
+            document.querySelector('.weight').value = '';
+            document.querySelector('.percentage').value = '';
+        }
+    </script>
+
+</body>
+</html>

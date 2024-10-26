@@ -1,10 +1,109 @@
 ﻿@page
-@model IndexModel
+@model WebApplication1.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/style.css"  />
+    <title>Home</title>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="navbar">
+     <!--Navigation-->
+        <ul class="nav-list ">
+
+            <li class="nav-item" >  
+                 <a href="#">  
+                      <img src="~/img/user.png" width=40px height=40px  />  
+                 </a>  
+            </li> 
+            <li class="nav-item" >  
+                 <a href="#" style="font-size: 20px;">Nguyễn Văn A</a>  
+            </li>  
+ 
+ </header>  
+    <!--Container-->   
+    <div class="container">
+           
+        <div class="item">
+            <a href="#" class="no-underline"> 
+           <center>
+           <img src="~/img/dashboard.png" width=100px height=100px  />
+           <p>Dash board</p>
+           </center>
+            </a>
+        </div> 
+       
+         
+        <div class="item">
+            <a href="#" class="no-underline">  
+            <center>
+            <img src="~/img/heart.png" width=100px height=100px  />
+            <p>Cá của tôi</p>
+            </center>
+            </a>
+        </div>
+        
+        <div class="item">
+             <a href="#"  class="no-underline"> 
+            <center>
+            <img src="~/img/pond.png" width=100px height=100px  />
+            <p>Hồ</p>
+            </center>
+            </a>
+        </div>
+        <div class="item">
+            <a href="/Food"  class="no-underline"> 
+            <center>
+            <img src="~/img/feed.png" width=100px height=100px  />
+            <p>Food Calculate</p>
+            </center>
+            </a>
+        </div>
+        <div class="item" >
+            <a href="#"  class="no-underline"> 
+            <center>
+            <img src="~/img/salt.png" width=100px height=100px  />
+            <p>Tính lượng muối</p>
+            </center>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#"  class="no-underline" > 
+            <center>
+            <img src="~/img/blog.png" width=100px height=100px  />
+            <p>Blog</p>
+            </center>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#"  class="no-underline"> 
+            <center>
+            <img src="~/img/shop.png" width=100px height=100px  />
+            <p>Shop</p>
+            </center>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#"  class="no-underline"> 
+            <center>
+            <img src="~/img/report.png" width=100px height=100px  />
+            <p>Báo cáo</p>
+            </center>
+            </a>
+        </div>
+        <div class="item">
+            <p></p>
+        </div>
+    </div>
+
+ <script src="~/js/index.js"></script>
+</body>
+</html>
+
