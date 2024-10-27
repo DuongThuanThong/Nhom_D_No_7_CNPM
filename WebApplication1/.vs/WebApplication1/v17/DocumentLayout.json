@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\mypond.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\mypond.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\mykoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\mykoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1705,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,92 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Privacy.cshtml",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Privacy.cshtml",
-              "RelativeToolTip": "WebApplication1\\Pages\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "MyPond.cshtml",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\MyPond.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\MyPond.cshtml",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\MyPond.cshtml*",
+              "RelativeToolTip": "WebApplication1\\Pages\\MyPond.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T08:04:17.308Z",
+              "WhenOpened": "2024-10-27T08:14:51.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mykoi.cshtml",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Mykoi.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Mykoi.cshtml",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Mykoi.cshtml*",
+              "RelativeToolTip": "WebApplication1\\Pages\\Mykoi.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T08:14:42.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml*",
+              "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T08:14:09.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Error.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Error.cshtml",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Error.cshtml",
-              "RelativeToolTip": "WebApplication1\\Pages\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T08:04:10.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\_ViewStart.cshtml",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "WebApplication1\\Pages\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T08:04:09.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\_ViewImports.cshtml",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "WebApplication1\\Pages\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T08:04:06.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T07:02:25.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml.cs",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:05:14.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
-              "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAAAEcAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T08:54:18.431Z",
+              "WhenOpened": "2024-10-27T07:02:25.179Z",
               "EditorCaption": ""
             }
           ]
