@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ï»¿
-=======
 
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
 body {
     margin: 0;
     display: flex;
@@ -11,15 +7,7 @@ body {
 }
 
 .background {
-<<<<<<< HEAD
-    position: fixed; /* ??t v? trï¿½ hï¿½nh n?n c? ??nh */
-    width: 100%;
-    height: 100%;
-    background-image: url('/img/background.jpg');
-    background-size: cover; /* Gi? nguyï¿½n t? l? hï¿½nh ?nh */
-    background-position: center;
-    z-index: -1; /* ??t hï¿½nh n?n phï¿½a sau cï¿½c n?i dung khï¿½c */
-=======
+
     position: fixed; /* ??t v? trí hình n?n c? ??nh */
     width: 100%;
     height: 100%;
@@ -27,28 +15,19 @@ body {
     background-size: cover; /* Gi? nguyên t? l? hình ?nh */
     background-position: center;
     z-index: -1; /* ??t hình n?n phía sau các n?i dung khác */
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
+
 }
 
 .navbar {
     position: fixed;
     width: 100%;
     background-color: white;
-<<<<<<< HEAD
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ?? bï¿½ng cho thanh nav */
-    z-index: 1000; /* ??m b?o thanh nav n?m trï¿½n cï¿½c n?i dung khï¿½c */
-}
-
-.nav-list {
-    list-style: none; /* xï¿½a d?u . do web t? t?o */
-=======
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ?? bóng cho thanh nav */
     z-index: 1000; /* ??m b?o thanh nav n?m trên các n?i dung khác */
 }
 
 .nav-list {
     list-style: none; /* xóa d?u . do web t? t?o */
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
     padding: 0px;
     margin: 10px;
     display: flex;
@@ -58,21 +37,13 @@ body {
 }
 
 .nav-item {
-<<<<<<< HEAD
     margin: 5px 14px; /* Kho?ng cï¿½ch gi?a cï¿½c m?c */
-=======
-    margin: 5px 14px; /* Kho?ng cách gi?a các m?c */
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
 }
 
     .nav-item a {
         font-family: 'Verdana', sans-serif;
         color: black;
-<<<<<<< HEAD
         text-decoration: none; /*xï¿½a g?ch chï¿½n do web t? t?o */
-=======
-        text-decoration: none; /*xóa g?ch chân do web t? t?o */
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
         font-size: 15px;
     }
 
@@ -83,26 +54,6 @@ body {
 .container {
     padding: 280px 400px 80px;
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: repeat(3, 200px); /* chia cï¿½c khung thï¿½nh 3 khung m?i hï¿½ng*/
-    gap: 20px;
-    position: relative; /* ?? nï¿½ n?m trï¿½n hï¿½nh n?n */
-    z-index: 1; /* ??m b?o n?i dung n?m phï¿½a trï¿½n hï¿½nh n?n */
-}
-
-/*My Koi */
-.container-mykoi, .container-mypond {
-    background-color: white;
-    padding: 20px 30px 300px;
-    margin-top: 130px;
-    z-index: 1;
-    border-radius: 20px;
-    width: 70%;
-    height: auto;
-}
-
-.title-mykoi, .title-mypond {
-=======
     grid-template-columns: repeat(3, 200px); /* chia các khung thành 3 khung m?i hàng*/
     gap: 20px;
     position: relative; /* ?? nó n?m trên hình n?n */
@@ -119,7 +70,6 @@ body {
 }
 
 .title-mykoi {
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
     color: black;
     font-size: 24px;
     display: flex;
@@ -131,16 +81,9 @@ body {
 
 .grid {
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: 150px 500px;
-    justify-content: flex-start;
-    align-content: flex-start;
-    cursor: default;
-=======
     grid-template-columns: 150px 500px; /* Chia container thành 2 c?t: c?t ??u t? ??ng, c?t th? hai chi?m ph?n còn l?i */
     justify-content: flex-start;
     align-content: flex-start;
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
 }
 
 .item-mykoi {
@@ -151,18 +94,12 @@ body {
     border-radius: 20px;
     background-color: powderblue;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-<<<<<<< HEAD
-    margin-top: -50px;
-}
-
-=======
 }
 
     .item-mykoi a.no-underline {
         text-decoration: none;
     }
 
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
 .item {
     margin: -5px -5px;
     padding: 5px;
@@ -278,5 +215,4 @@ input, label {
 .pond-infrom {
     border: 1px dashed black;
 }
-=======
->>>>>>> 8929588cc632292200e3aa1ca3f853e56acb2a98
+
