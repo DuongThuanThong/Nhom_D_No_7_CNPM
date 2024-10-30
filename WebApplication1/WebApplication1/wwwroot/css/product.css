@@ -1,0 +1,113 @@
+
+
+.container-product{
+margin-top: 200px;
+margin-right: 80px;
+}
+.product{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.product img{
+    margin-left: 200px;
+}
+.inf{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.inf p{
+    margin-left: 35px;
+    font-family: "Roboto", sans-serif;
+}
+.inline{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+#font{
+    margin-left:3px;
+    font-family: 'Verdana', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    opacity: 0.3;
+}
+hr {
+    width: 90%; 
+    margin: 20px auto ;  
+    border-top: 1.5px solid black; 
+    opacity: 0.1;
+}
+.title{
+    margin-bottom: 10px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin-left: 35px;
+}
+.price{
+    margin-left: 35px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.number-input {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    margin-top: 40px;
+  }
+
+  /* Styling for the buttons */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    width: 22px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    color: rgb(224, 151, 15);
+    background-color: white;
+    border-color: rgb(231, 218, 201);
+  }
+  .button:hover{
+    background-color: rgb(224, 151, 15);
+    color:white;
+    transition:  0.4s ease;
+  }
+
+  /* Styling for the input */
+  .number-input input[type="text"] {
+    width: 30px;
+    height: 38px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(224, 151, 15);
+    border-color: #e7e7e7;
+    outline: none;
+    border: 1px solid #ddd; /* Default color for the border */
+    
+  }
+  .buy{
+    display: flex;
+  }
+  .buy-button{
+    margin-top: 40px;
+    margin-left:30px;
+  } 
+  .buy-button button{
+    padding:14px;
+    background-color:rgb(224, 151, 15); 
+    border: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .buy-button button:hover{
+    background-color:rgb(207, 142, 1); 
+    transition:  0.4s ease;
+    cursor: pointer;
+  }

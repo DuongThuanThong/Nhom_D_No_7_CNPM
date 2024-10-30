@@ -9,23 +9,35 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
-build_property.ProjectDir = D:\_Đồ_Án_CNPM\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1\
+build_property.ProjectDir = C:\Users\DELL\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\_Đồ_Án_CNPM\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1
+build_property.MSBuildProjectDirectory = C:\Users\DELL\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Index.cshtml]
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Mykoi.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlrb2kuY3NodG1s
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/menu/Koiproducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWVudVxLb2lwcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/MyPond.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlQb25kLmNzaHRtbA==
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/menu/Pondproducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWVudVxQb25kcHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/product/Filtermedium.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxGaWx0ZXJtZWRpdW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/product/Kusuri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxLdXN1cmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/product/Medikoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxNZWRpa29pLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

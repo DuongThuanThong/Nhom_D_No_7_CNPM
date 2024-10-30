@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplication1.Pages
+namespace WebApplication1.Pages.product
 {
-    public class MyPond : PageModel
+    public class Medikoi : PageModel
     {
-        private readonly ILogger<MyPond> _logger;
+        private readonly ILogger<Medikoi> _logger;
 
-        public MyPond(ILogger<MyPond> logger)
+        public Medikoi(ILogger<Medikoi> logger)
         {
             _logger = logger;
         }
