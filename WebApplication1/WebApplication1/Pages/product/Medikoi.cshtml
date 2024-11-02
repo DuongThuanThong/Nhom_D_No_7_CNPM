@@ -14,29 +14,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="~/img/logo.png" type="image/png">
     <title>Medikoi</title>
 
 </head>
 <body>
+    <div class="body2">
     <div class="navbar">
      <!--Navigation-->
         <ul class="nav-list ">
 
             <li class="nav-item" >  
-                 <a href="#" style="font-size: 20px;"> Trang chủ</a>  
+                 <a href="/homepage" style="font-size: 20px;" class="hover"> Trang chủ</a>  
             </li> 
             <li class="nav-item" >  
-                 <a href="/Index" style="font-size: 20px;">Shop</a>  
+                 <a href="/Index" style="font-size: 20px;" class="hover">Shop</a>  
             </li> 
             <li class="nav-item" >  
-                 <a href="#" style="font-size: 20px;">Giới thiệu</a>  
+                 <a href="#" style="font-size: 20px;" class="hover">Giới thiệu</a>  
             </li> 
             <li class="nav-item" >  
-                 <a href="#" style="font-size: 20px;">Liên hệ</a>  
+                 <a href="#" style="font-size: 20px;" class="hover">Liên hệ</a>  
             </li>     
             </ul>
         <div class="nav-list" >
-            <img src="~/img/logo.png" style="width:15%; margin-left: 70px;">
+            <img src="~/img/logo.png" class="logo" style="width:15%; margin-left: 70px;">
         </div>
          <div class="nav-list" id="margin-right">
             <li class="nav-item" >
@@ -52,16 +54,7 @@
         </div>
     </div>  
 
-<div class="menu">
-    <div class="container-menu">
-        <div class="menu-items">
-            <a href="/menu/Koiproducts"><p>Koi's Products</p></a>
-        </div>
-        <div class="menu-items">
-            <a href="/menu/Pondproducts"><p>Pond's Products</p></a>
-        </div>
-    </div>
-</div>
+
 
 <div class="container-product">
     <div class="product">
@@ -78,9 +71,9 @@
                      <input type="text" id="number" value="1">
                     <div class="button" onclick="increment()">+</div>
             </div>
-            <div class="buy-button">
+            <a href="#" class="buy-button">
                 <button>THÊM VÀO GIỎ HÀNG</button>
-            </div>
+            </a>
             </div>
             <hr>
             <p>Mô tả: Được bổ sung axit béo omega và các chất tăng cường màu sắc tự nhiên,
@@ -95,7 +88,8 @@
     </div>
 </div>
 
+<script src="~/js/button.js"></script>
 <script src="~/js/index.js"></script>
-
+    </div>
 </body>
 </html>

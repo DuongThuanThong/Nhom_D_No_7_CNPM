@@ -1,0 +1,113 @@
+body {  
+    font-family: Arial, sans-serif;  
+    height: 100vh;  
+    background: white; 
+    margin: 0;  
+   
+}  
+
+.slider {  
+    transform: translateY(105px);  
+    display: flex;  
+    align-items: center;  
+    overflow: hidden;  
+    position: relative;  
+    justify-content: space-between;  
+    background: white;  
+    padding: 20px;  
+    border-radius: 10px;  
+    width: 100%;  
+    height: fit-content;  
+}  
+
+.content {  
+    flex: 1;  
+    margin-left: 50px;  
+    position: relative;  
+    animation:ani 0.8s ease 1;
+}  
+
+
+h1 {  
+    font-size: 70px;     
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+p {  
+    margin: 10px 0;  
+    color: #979292;     
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}  
+@keyframes ani {
+    from{ opacity: 0;
+    transform:translateX(50px);
+
+    }
+    to{ opacity: 1;
+    transform:translateX(0px);
+    }
+
+}
+.explore {  
+    background-color: #333;  
+    color: white;  
+    padding: 15px 30px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+   transform: translateY(50px);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "PT Sans Caption", sans-serif;
+    font-style: normal;
+}  
+.explore:hover{
+    transition: 0.5s ease-in-out;
+    background-color: rgb(146, 146, 9);
+    
+}
+
+
+.image {  
+    flex: 1;  
+    text-align: center;   
+}  
+
+img {  
+    width: 80%;  
+    height: auto;  
+    border-radius: 10px;  
+    transition: 0.5s ease-in-out;  
+}  
+
+.controls {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    width: 95%;  
+    display: flex;  
+    justify-content: space-between;  
+    
+}  
+
+.arrow {  
+    cursor: pointer;  
+    font-size: 24px;  
+    padding: 10px;  
+    
+}  
+.arrow:hover{
+    opacity: 0.5;
+}
+
+#title-homepage{
+    color: black;
+    font-size: 32px;
+    font-family: "PT Sans Caption", sans-serif; 
+    margin-bottom: 20px;
+}

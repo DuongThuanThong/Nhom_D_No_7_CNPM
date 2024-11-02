@@ -12,29 +12,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+     <link rel="icon" href="~/img/logo.png" type="image/png">
     <title>Shop</title>
 
 </head>
 <body>
+    <div class="body2">
+    
     <div class="navbar">
      <!--Navigation-->
+
         <ul class="nav-list ">
 
-            <li class="nav-item" >  
-                 <a href="#" style="font-size: 20px;"> Trang chủ</a>  
+            <li class="nav-item" >
+                <a href="/homepage" style="font-size: 20px;"><div class="hover"> Trang chủ</div></a>
             </li> 
             <li class="nav-item" >  
-                 <a href="/Index" style="font-size: 20px;">Shop</a>  
+                 <a href="/Index" style="font-size: 20px;"><div class="hover">Shop</div></a>  
             </li> 
             <li class="nav-item" >  
-                 <a href="#" style="font-size: 20px;">Giới thiệu</a>  
+                 <a href="#" style="font-size: 20px;"><div class="hover">Giới thiệu</div></a>  
             </li> 
             <li class="nav-item" >  
-                 <a href="#" style="font-size: 20px;">Liên hệ</a>  
+                 <a href="#" style="font-size: 20px;"><div class="hover">Liên hệ</div></a>  
             </li>     
             </ul>
         <div class="nav-list" >
-            <img src="~/img/logo.png" style="width:15%; margin-left: 70px;">
+            <img src="~/img/logo.png" class="logo" style="width:15%; margin-left: 70px;">
         </div>
          <div class="nav-list" id="margin-right" >
             <li class="nav-item" >  
@@ -49,21 +54,22 @@
             </li> 
         </div>
     </div>  
+</div>
 
 <div class="menu">
     <div class="container-menu">
         <div class="menu-items">
-            <a href="/menu/Koiproducts"><p>Koi's Products</p></a>
+            <a href="/menu/Koiproducts"class="hover"><p>Koi's Products</p></a>
         </div>
         <div class="menu-items">
-             <a href="/menu/Pondproducts"><p>Pond's Products</p></a>
+             <a href="/menu/Pondproducts" class="hover"><p>Pond's Products</p></a>
         </div>
     </div>
 </div>
     
 
-        <div class="container">
-            <div class="card-product">
+        <div class="container" >
+            <div class="card-product" >
                 <div class="card">
                     <a href="/product/Medikoi" >
                     <img src="~/img/koiproduct.png" style="width:65%" />
@@ -88,10 +94,13 @@
                     <a href="/menu/Pondproducts"class="small-link">Pond's Product</a>
                     <div class="price">55.000 đ</div>
                 </div>
+                
+                
                
                 </div>
             </div>
         </div>
-    
+    <script src="~/js/index.js"></script>
+    </div>
 </body>
 </html>

@@ -11,10 +11,21 @@ grid-template-columns: 1fr 1fr;
 .product img{
     margin-left: 200px;
 }
+.pic{
+  position: relative;
+  
+
+
+}
+
 .inf{
+
     background-color: white;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-left: 40px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    
 }
 .inf p{
     margin-left: 35px;
@@ -23,7 +34,6 @@ grid-template-columns: 1fr 1fr;
 .inline{
     display: flex;
     align-items: center;
-    justify-content:flex-start;
 }
 #font{
     margin-left:3px;
