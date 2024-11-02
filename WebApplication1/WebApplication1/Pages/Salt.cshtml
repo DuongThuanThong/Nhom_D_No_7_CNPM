@@ -1,0 +1,140 @@
+@page
+@model WebApplication1.Pages.Salt
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Salt.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">  
+                <a href="#">  
+                    <img src="img/user.png" width="40px" height="40px"/>  
+                </a>  
+            </li> 
+            <li class="nav-item">  
+                <a href="#" style="font-size: 20px;">Nguyễn Văn A</a>  
+            </li>  
+        </ul>
+    </header>
+
+    <div class="container-mySalt">
+        <h2 class="title-mySalt"><u>Salt Calculator</u></h2>
+        <button id="showFormbtn" style="background-color: orange; width: 50px; height: 50px;" onclick="showForm()">+</button>
+
+        <div id="SaltForm" class="salt" style="display: none;">
+            <h2>Enter Salt Parameters:</h2>
+            <form id="saltForm">
+                <div id="salt-inputs">
+                    <div class="salt-row-form">
+                        <label>Water volume (liter):</label>
+                        <input type="number" class="volume" step="0.01" placeholder="Enter water volume" required>
+                    </div>
+                    <div class="salt-row-form">
+                        <label>Salt Ratio (%):</label>
+                        <input type="number" class="ratio" step="0.01" placeholder="Enter salt ratio" required>
+                    </div>
+                </div>
+                <button type="submit" id="addsalt">Submit</button>
+            </form>
+        </div>
+
+        <div id="saltList" class="salt-list"></div>
+
+        <h3 id="totalSalt">Total Salt: 0 kg</h3>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        window.onload = function() {
+            document.getElementById('saltForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const form = document.getElementById('saltForm');
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                } else {
+                    addSaltRow();
+                }
+            });
+        };
+
+    function showForm() {
+        const saltForm = document.getElementById('SaltForm');
+        const button = document.getElementById('showFormbtn');
+        
+        if (saltForm.style.display === 'none') {
+            saltForm.style.display = 'block';
+            button.innerHTML = '-';
+        } else {
+            saltForm.style.display = 'none';
+            button.innerHTML = '+';
+        }
+    }
+
+    let saltList = [];
+    function addSaltRow() {
+        const volume = parseFloat(document.querySelector('.volume').value);
+        const ratio = parseFloat(document.querySelector('.ratio').value);
+
+        const salt = {
+            volume: volume,
+            ratio: ratio,
+            id: Date.now()
+        };
+
+        saltList.push(salt);
+        displaySaltList();
+        calculateTotalSalt();
+        clearInputFields();
+    }
+
+    function displaySaltList() {
+        const saltListDiv = document.getElementById('saltList');
+        saltListDiv.innerHTML = '';
+
+        saltList.forEach(salt => {
+            const saltRow = document.createElement('div');
+            saltRow.classList.add('salt-row');
+            saltRow.innerHTML = `
+                <p>Water Volume: ${salt.volume} liters - Salt Ratio: ${salt.ratio}%</p>
+                <button onclick="removeSalt(${salt.id})">X</button>
+            `;
+            saltListDiv.appendChild(saltRow);
+        });
+    }
+
+    function removeSalt(id) {
+        saltList = saltList.filter(salt => salt.id !== id);
+        displaySaltList();
+        calculateTotalSalt();
+    }
+
+    function calculateTotalSalt() {
+    let totalSalt = 0;
+
+    saltList.forEach(salt => {
+        totalSalt += (salt.volume * salt.ratio) / 100;
+    });
+
+    const totalSaltElement = document.getElementById('totalSalt');
+    totalSaltElement.innerText = `Total Salt: ${totalSalt.toFixed(2)} kg`;
+    totalSaltElement.style.display = 'block';  
+}
+
+    function clearInputFields() {
+        document.querySelector('.volume').value = '';
+        document.querySelector('.ratio').value = '';
+    }
+
+    </script>
+</body>
+</html>

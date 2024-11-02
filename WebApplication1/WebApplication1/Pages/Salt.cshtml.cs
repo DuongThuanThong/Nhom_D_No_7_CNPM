@@ -8,11 +8,11 @@ using Microsoft.Extensions.Logging;
 
 namespace WebApplication1.Pages
 {
-    public class MyPond : PageModel
+    public class Salt : PageModel
     {
-        private readonly ILogger<MyPond> _logger;
+        private readonly ILogger<Salt> _logger;
 
-        public MyPond(ILogger<MyPond> logger)
+        public Salt(ILogger<Salt> logger)
         {
             _logger = logger;
         }
