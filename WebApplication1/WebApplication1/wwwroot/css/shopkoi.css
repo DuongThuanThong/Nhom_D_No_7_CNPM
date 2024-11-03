@@ -1,8 +1,7 @@
 body {
     margin: 0;
-
- 
-    background-color: rgb(239, 245, 245);
+    overflow-x: hidden;
+   
 }
 a{
     text-decoration: none;/*xoa gach chan */
@@ -10,6 +9,7 @@ a{
 
 .body2{
     display: flex;
+    flex-direction: column;
 }
 .navbar {
     display: flex;
@@ -138,4 +138,30 @@ grid-template-columns: repeat(4,1fr);
   font-size: 20px;
   color: rgb(224, 151, 15);
   margin-top: 5px;
+}
+
+#footer{
+    width: 100%;
+    margin-block: 0px  ;  
+    border-top: 1.5px solid black; 
+    opacity: 0.1;
+ 
+}
+#footer-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+#content-footer{
+    font-family: 'Verdana', sans-serif;
+    padding: 15px;
+    margin-left: 70px;
+    font-size: 9px;
+    opacity: 0.7;
+}
+#img-footer{
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 60px;
 }
