@@ -7,7 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\MyKoi.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\MyKoi.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\MyKoi.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services1\Services1.csproj" />
   </ItemGroup>
 
 </Project>

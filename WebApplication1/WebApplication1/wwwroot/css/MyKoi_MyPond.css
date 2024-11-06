@@ -1,4 +1,4 @@
-
+﻿
 body {
     margin: 0;
     display: flex;
@@ -8,13 +8,13 @@ body {
 
 .background {
 
-    position: fixed; /* ??t v? tr� h�nh n?n c? ??nh */
+    position: fixed; /* ??t v? trí hình n?n c? ??nh */
     width: 100%;
     height: 100%;
     background-image: url('/img/background.jpg');
-    background-size: cover; /* Gi? nguy�n t? l? h�nh ?nh */
+    background-size: cover; /* Gi? nguyên t? l? hình ?nh */
     background-position: center;
-    z-index: -1; /* ??t h�nh n?n ph�a sau c�c n?i dung kh�c */
+    z-index: -1; /* ??t hình n?n phía sau các n?i dung khác */
 
 }
 
@@ -22,12 +22,12 @@ body {
     position: fixed;
     width: 100%;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ?? b�ng cho thanh nav */
-    z-index: 1000; /* ??m b?o thanh nav n?m tr�n c�c n?i dung kh�c */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ?? bóng cho thanh nav */
+    z-index: 1000; /* ??m b?o thanh nav n?m trên các n?i dung khác */
 }
 
 .nav-list {
-    list-style: none; /* x�a d?u . do web t? t?o */
+    list-style: none; /* xóa d?u . do web t? t?o */
     padding: 0px;
     margin: 10px;
     display: flex;
@@ -37,13 +37,13 @@ body {
 }
 
 .nav-item {
-    margin: 5px 14px; /* Kho?ng c�ch gi?a c�c m?c */
+    margin: 5px 14px; /* Kho?ng cï¿½ch gi?a cï¿½c m?c */
 }
 
     .nav-item a {
         font-family: 'Verdana', sans-serif;
         color: black;
-        text-decoration: none; /*x�a g?ch ch�n do web t? t?o */
+        text-decoration: none; /*xï¿½a g?ch chï¿½n do web t? t?o */
         font-size: 15px;
     }
 
@@ -54,15 +54,15 @@ body {
 .container {
     padding: 280px 400px 80px;
     display: grid;
-    grid-template-columns: repeat(3, 200px); /* chia c�c khung th�nh 3 khung m?i h�ng*/
+    grid-template-columns: repeat(3, 200px); /* chia các khung thành 3 khung m?i hàng*/
     gap: 20px;
-    position: relative; /* ?? n� n?m tr�n h�nh n?n */
-    z-index: 1; /* ??m b?o n?i dung n?m ph�a tr�n h�nh n?n */
+    position: relative; /* ?? nó n?m trên hình n?n */
+    z-index: 1; /* ??m b?o n?i dung n?m phía trên hình n?n */
 }
 
 .container-mykoi {
-    background-color: white; /* M�u n?n b?ng */
-    padding: 20px 30px 300px; /* Padding theo y�u c?u */
+    background-color: white; /* Màu n?n b?ng */
+    padding: 20px 30px 300px; /* Padding theo yêu c?u */
     margin-top: 200px;
     z-index: 10;
     border-radius: 20px;
@@ -81,7 +81,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 150px 500px; /* Chia container th�nh 2 c?t: c?t ??u t? ??ng, c?t th? hai chi?m ph?n c�n l?i */
+    grid-template-columns: 150px 500px; /* Chia container thành 2 c?t: c?t ??u t? ??ng, c?t th? hai chi?m ph?n còn l?i */
     justify-content: flex-start;
     align-content: flex-start;
 }
@@ -131,7 +131,7 @@ body {
         .item p:hover {
             color: blue;
         }
-<<<<<<< HEAD
+
 
 #add-koi-form, #add-pond-form {
     display: none;
@@ -216,3 +216,38 @@ input, label {
     border: 1px dashed black;
 }
 
+.username {
+    font-size: 20px;
+}
+
+.add-button {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+}
+
+.form-container {
+    display: none; /* Bạn có thể bật hoặc tắt hiển thị bằng JavaScript */
+}
+
+.form-header {
+    border-bottom: 1px solid black;
+}
+
+.form-title {
+    border-bottom: 1px solid black;
+}
+
+.close-button {
+    /* Thêm các kiểu cho nút đóng nếu cần */
+}
+
+.form-content {
+    border: 1px dashed black;
+}
+
+.submit-button {
+    margin-left: 200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
