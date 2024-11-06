@@ -16,61 +16,56 @@
 
     <div id="sign-up">
         <h2>Sign Up</h2>
-        <div class="input-sign">
-            <input type="name" placeholder="Name" required>
-            <i class="fa-solid fa-user"></i>
-        </div>
+        <form method="post" action="/submit-signup">
+            <div class="input-sign">
+                <input type="text" name="name" placeholder="Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
 
-        <div class="input-sign">
-            <input type="email" placeholder="Email" required>
-            <i class="fa-solid fa-envelope"></i>
-        </div>
+            <div class="input-sign">
+                <input type="email" name="email" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
 
-        <div class="input-sign">
-            <input type="phone" placeholder="Phone" required>
-            <i class="fa-solid fa-phone"></i>
-        </div>
+            <div class="input-sign">
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <i class="fa-solid fa-phone"></i>
+            </div>
 
-        <div class="input-sign">
-            <input type="password" placeholder="Password" required>
-            <i class="fa-solid fa-lock"></i>
-        </div>
+            <div class="input-sign">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
 
-        <div class="input-sign">
-            <input type="password-confirm"placeholder="Password confirm" required>
-            <i class="fa-solid fa-lock"></i>
-        </div>
-    
-        <button id="signUpButton" class="sign-up-button">Sign Up</button>
+            <div class="input-sign">
+                <input type="password" name="password_confirm" placeholder="Password confirm" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        
+            <button type="submit" id="signUpButton" class="sign-up-button">Sign Up</button>
+        </form>
+    </div>
 
+    <script>
+    document.getElementById('signUpButton').addEventListener('click', function(event) {
+        const inputs = document.querySelectorAll('.input-sign input');
+        let valid = true;
 
-
-        <script>
-        document.getElementById('signUpButton').addEventListener('click', function(event) {
-            // Lấy tất cả các input trong form
-            const inputs = document.querySelectorAll('.input-sign input');
-            let valid = true;
-
-            // Kiểm tra từng input có được điền hay chưa
-            inputs.forEach(function(input) {
-                if (!input.value) {
-                    valid = false;
-                    input.style.borderColor = 'red';  // Đổi màu viền input nếu chưa điền
-                } else {
-                    input.style.borderColor = '';     // Đặt lại viền nếu đã điền
-                }
-            });
-
-            if (valid) {
-                // Nếu tất cả các trường hợp lệ, thực hiện hành động (ở đây chỉ là thông báo)
-                alert('Form submitted successfully!');
+        inputs.forEach(function(input) {
+            if (!input.value) {
+                valid = false;
+                input.style.borderColor = 'red';
             } else {
-                // Ngăn việc gửi form nếu có trường nào chưa được điền
-                event.preventDefault();
-                alert('Please fill in all required fields.');
+                input.style.borderColor = '';
             }
         });
-        </script>
+
+        if (!valid) {
+            event.preventDefault();
+            alert('Please fill in all required fields.');
+        }
+    });
+    </script>
 
 </body>
 </html>
