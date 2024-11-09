@@ -1,6 +1,6 @@
 using Respositories1;
 using Respositories1.Interfaces;
-using Respositories1.Models;
+using Respositories1.Entities;
 using Services1;
 using Services1.Interfaces;
 

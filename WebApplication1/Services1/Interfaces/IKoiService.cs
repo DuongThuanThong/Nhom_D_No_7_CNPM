@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Respositories1.Models;
+using Respositories1.Entities;
 
 namespace Services1.Interfaces
 {

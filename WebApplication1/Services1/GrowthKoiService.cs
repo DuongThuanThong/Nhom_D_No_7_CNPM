@@ -1,5 +1,6 @@
-﻿using Respositories1.Models;
+﻿using Respositories1.Entities;
 using Services1.Interfaces;
+using Respositories1.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,8 @@ namespace Services1
 {
     public class GrowthKoiService : IGrowthKoiService
     {
-        private readonly IGrowthKoiService _repository;
-        public GrowthKoiService(IGrowthKoiService repository) 
+        private readonly IGrowthKoiRepository _repository;
+        public GrowthKoiService(IGrowthKoiRepository repository) 
         {
             _repository = repository;
         }

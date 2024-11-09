@@ -1,0 +1,71 @@
+@page
+@model WebApplication1.Pages.LoginModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="background"></div>
+
+    <div id="sign-up">
+        <h2>Sign Up</h2>
+        <form method="post" action="/submit-signup">
+            <div class="input-sign">
+                <input type="text" name="name" placeholder="Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-sign">
+                <input type="email" name="email" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-sign">
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="input-sign">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="input-sign">
+                <input type="password" name="password_confirm" placeholder="Password confirm" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        
+            <button type="submit" id="signUpButton" class="sign-up-button">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+    document.getElementById('signUpButton').addEventListener('click', function(event) {
+        const inputs = document.querySelectorAll('.input-sign input');
+        let valid = true;
+
+        inputs.forEach(function(input) {
+            if (!input.value) {
+                valid = false;
+                input.style.borderColor = 'red';
+            } else {
+                input.style.borderColor = '';
+            }
+        });
+
+        if (!valid) {
+            event.preventDefault();
+            alert('Please fill in all required fields.');
+        }
+    });
+    </script>
+
+</body>
+</html>

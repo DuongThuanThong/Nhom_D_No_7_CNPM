@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Respositories1.Interfaces;
-using Respositories1.Models;
+using Respositories1.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Respositories1.Models;
+namespace Respositories1.Entities;
 
 public partial class Koi
 {

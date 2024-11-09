@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace Respositories1.Models;
+namespace Respositories1.Entities;
 
 public partial class KoiCareSystemAhContext : DbContext
 {
@@ -27,9 +27,13 @@ public partial class KoiCareSystemAhContext : DbContext
 
     public virtual DbSet<Member> Members { get; set; }
 
+    public virtual DbSet<MessageAlbertWater> MessageAlbertWaters { get; set; }
+
     public virtual DbSet<Order> Orders { get; set; }
 
     public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+
+    public virtual DbSet<Pond> Ponds { get; set; }
 
     public virtual DbSet<Product> Products { get; set; }
 
@@ -38,6 +42,8 @@ public partial class KoiCareSystemAhContext : DbContext
     public virtual DbSet<Shop> Shops { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
+    public virtual DbSet<WaterParameter> WaterParameters { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -179,6 +185,29 @@ public partial class KoiCareSystemAhContext : DbContext
                 .HasConstraintName("FK__Member__user_id__44FF419A");
         });
 
+        modelBuilder.Entity<MessageAlbertWater>(entity =>
+        {
+            entity.HasKey(e => e.MessageAlbertId).HasName("PK__Message___0E02B675450838AF");
+
+            entity.ToTable("Message_Albert_Water");
+
+            entity.Property(e => e.MessageAlbertId).HasColumnName("MessageAlbert_id");
+            entity.Property(e => e.MessageContain).HasColumnName("message_contain");
+            entity.Property(e => e.MessageType)
+                .HasMaxLength(200)
+                .HasColumnName("message_type");
+            entity.Property(e => e.PondId).HasColumnName("pond_id");
+            entity.Property(e => e.WaterParamId).HasColumnName("water_param_id");
+
+            entity.HasOne(d => d.Pond).WithMany(p => p.MessageAlbertWaters)
+                .HasForeignKey(d => d.PondId)
+                .HasConstraintName("FK__Message_A__pond___41EDCAC5");
+
+            entity.HasOne(d => d.WaterParam).WithMany(p => p.MessageAlbertWaters)
+                .HasForeignKey(d => d.WaterParamId)
+                .HasConstraintName("FK__Message_A__water__42E1EEFE");
+        });
+
         modelBuilder.Entity<Order>(entity =>
         {
             entity.HasKey(e => e.OrderId).HasName("PK__Order__46596229B4BF61AB");
@@ -216,6 +245,27 @@ public partial class KoiCareSystemAhContext : DbContext
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK__OrderDeta__produ__5EBF139D");
+        });
+
+        modelBuilder.Entity<Pond>(entity =>
+        {
+            entity.HasKey(e => e.PondId).HasName("PK__Pond__890F243F05F2292C");
+
+            entity.ToTable("Pond");
+
+            entity.Property(e => e.PondId).HasColumnName("pond_id");
+            entity.Property(e => e.Depth).HasColumnName("depth");
+            entity.Property(e => e.DrainCount).HasColumnName("drain_count");
+            entity.Property(e => e.Image)
+                .HasMaxLength(225)
+                .IsUnicode(false)
+                .HasColumnName("image");
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .HasColumnName("name");
+            entity.Property(e => e.PumpCapacity).HasColumnName("pump_capacity");
+            entity.Property(e => e.Size).HasColumnName("size");
+            entity.Property(e => e.Volume).HasColumnName("volume");
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -293,6 +343,41 @@ public partial class KoiCareSystemAhContext : DbContext
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
                 .HasConstraintName("FK__User__role_id__3A81B327");
+        });
+
+        modelBuilder.Entity<WaterParameter>(entity =>
+        {
+            entity.HasKey(e => e.WaterParamId).HasName("PK__waterPar__8555722A9FC05383");
+
+            entity.ToTable("waterParameter");
+
+            entity.Property(e => e.WaterParamId).HasColumnName("water_param_id");
+            entity.Property(e => e.MeasureDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Measure_date");
+            entity.Property(e => e.No2)
+                .HasColumnType("decimal(5, 2)")
+                .HasColumnName("NO2");
+            entity.Property(e => e.No3)
+                .HasColumnType("decimal(5, 2)")
+                .HasColumnName("NO3");
+            entity.Property(e => e.O2).HasColumnType("decimal(5, 2)");
+            entity.Property(e => e.Ph).HasColumnType("decimal(5, 2)");
+            entity.Property(e => e.Po4)
+                .HasColumnType("decimal(5, 2)")
+                .HasColumnName("PO4");
+            entity.Property(e => e.PondId).HasColumnName("pond_id");
+            entity.Property(e => e.Salt)
+                .HasColumnType("decimal(5, 2)")
+                .HasColumnName("salt");
+            entity.Property(e => e.Temperature)
+                .HasColumnType("decimal(5, 2)")
+                .HasColumnName("temperature");
+
+            entity.HasOne(d => d.Pond).WithMany(p => p.WaterParameters)
+                .HasForeignKey(d => d.PondId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK__waterPara__pond___3F115E1A");
         });
 
         OnModelCreatingPartial(modelBuilder);
