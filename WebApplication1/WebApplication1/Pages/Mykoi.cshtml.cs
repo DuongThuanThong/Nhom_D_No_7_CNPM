@@ -51,10 +51,10 @@ namespace WebApplication1.Pages
             int koiId = newKoi.KoiId;
 
             float size = float.TryParse(Request.Form["Size"], out float sizeValue) ? sizeValue : 0;
-            float weight = float.TryParse(Request.Form["Weight"], out float  weightValue) ? weightValue : 0;    
+            float weight = float.TryParse(Request.Form["Weight"], out float  weightValue) ? weightValue : 0f;    
             var body= Request.Form["Body"].FirstOrDefault();
             int age = int.TryParse(Request.Form["Age"], out int ageValue) ? ageValue : 0;
-            float price = float.TryParse(Request.Form["Price"], out float  priceValue) ? priceValue : 0;
+            float price = float.TryParse(Request.Form["Price"], out float  priceValue) ? priceValue : 0f;
 
             if (size == 0 || weight == 0)
             {

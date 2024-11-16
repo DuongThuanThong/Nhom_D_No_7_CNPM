@@ -13,19 +13,7 @@
 <body>
     <div class="background"></div>
 
-    <header class="navbar">
-        <!--Navigation-->
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="#">
-                    <img src="~/img/user.png" width="40" height="40" />
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="username">Nguyễn Văn A</a>
-            </li>
-        </ul>
-    </header>
+    @await Html.PartialAsync("_Navbar")
 
     <div class="container-mykoi">
         <h2 class="title-mykoi">My Koi</h2>

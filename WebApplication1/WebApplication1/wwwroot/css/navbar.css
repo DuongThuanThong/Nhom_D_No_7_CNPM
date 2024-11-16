@@ -1,0 +1,39 @@
+﻿.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.nav-list {
+    margin: 10px 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+.nav-content { 
+    display: flex;
+    align-items: center;
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+
+    .nav-content:hover { 
+        border: 1px solid black;
+        background-color: lightpink;
+    }
+
+.nav-item {
+    margin: 5px 14px;
+}
+
+
+    .nav-item-name {
+        color: black;
+        font-size: 15px;
+        font-weight:bolder;
+        padding-left:10px;
+    }

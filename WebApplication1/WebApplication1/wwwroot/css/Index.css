@@ -1,0 +1,81 @@
+﻿/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+/* Background image */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.8);
+}
+
+/* Container for items */
+.container {
+    margin-top: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 30px;
+    max-width: 1200px;
+    z-index: 1;
+}
+
+/* Item styles */
+.item {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: white;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Image styles */
+.item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s;
+}
+
+.item:hover img {
+    transform: rotate(10deg);
+}
+
+/* Text styles */
+.item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Link styles */
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-underline:hover p {
+    color: #ffeb3b;
+}
