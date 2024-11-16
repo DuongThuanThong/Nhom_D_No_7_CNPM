@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\DELL\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/aboutus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWJvdXR1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DELL/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/homepage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaG9tZXBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

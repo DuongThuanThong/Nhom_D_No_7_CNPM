@@ -105,9 +105,9 @@ img {
     opacity: 0.5;
 }
 
-#title-homepage{
+.title-homepage{
     color: black;
     font-size: 32px;
     font-family: "PT Sans Caption", sans-serif; 
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }

@@ -1,5 +1,5 @@
-﻿@page
-@model WebApplication1.Pages.IndexModel
+@page
+@model WebApplication1.Pages.aboutus
 @{
 }
 <!DOCTYPE html>
@@ -8,18 +8,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="~/css/shopkoi.css"  />
+    <link rel="stylesheet" href="~/css/aboutus.css"  />
     <script src="https://kit.fontawesome.com/75bac81b76.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=PT+Sans+Caption:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap" rel="stylesheet">
     
      <link rel="icon" href="~/img/logo.png" type="image/png">
-    <title>Shop</title>
+    <title>About us</title>
 
 </head>
 <body>
     <div class="body2">
-    
     <div class="navbar">
      <!--Navigation-->
 
@@ -37,7 +37,6 @@
             <li class="nav-item" >  
                  <a href="/contact" style="font-size: 20px;"><div class="hover">Liên hệ</div></a>  
             </li>     
-           
             </ul>
         <div class="nav-list" >
             <a href="/homepage"><img src="~/img/logo.png" class="logo" style="width:15%; margin-left: 70px;"></a>
@@ -54,55 +53,22 @@
                  </a>  
             </li> 
         </div>
-    </div>  
-</div>
+    </div> 
 
-<div class="menu">
-    <div class="container-menu">
-        <div class="menu-items">
-            <a href="/menu/Koiproducts"class="hover"><p>Koi's Products</p></a>
+
+    <div class="aboutus-container">
+        <div class="aboutus-pic">
+            <img src="~/img/aboutus.webp" />
         </div>
-        <div class="menu-items">
-             <a href="/menu/Pondproducts" class="hover"><p>Pond's Products</p></a>
+        <div class="aboutus-inf">
+            <p class="aboutus-title">Về chúng tôi</p>
+            <p class="aboutus-content">Ngay từ giữa năm 2024, chúng tôi đã bắt đầu phát triển ứng dụng KoiControl, cho phép người nuôi cá koi quản lý toàn bộ việc quản lý ao của họ bằng kỹ thuật số. Ứng dụng này đã có mặt trên các cửa hàng ứng dụng từ cuối năm 2024 và kể từ đó đã khẳng định mình là ứng dụng tốt nhất trong phân khúc cá koi.</p>
+            <p class="aboutus-content">Tuy nhiên, thú chơi cá koi vẫn chưa được thể hiện nhiều trong lĩnh vực thời trang. Chúng tôi muốn thay đổi điều đó! Với những mặt hàng thời trang chất lượng cao với thiết kế độc quyền, chúng tôi mong muốn mang đến cho những người nuôi cá koi cơ hội thể hiện tình yêu của mình với thú chơi theo cách này. Từ người nuôi cá koi đến người nuôi cá koi.</p>
+        <hr>
+        <p class="aboutus-endcontent">KoiControl EST. 2024</p>
         </div>
     </div>
-</div>
-    
 
-        <div class="container" >
-            <div class="card-product" >
-                <div class="card">
-                    <a href="/product/Medikoi" >
-                    <img src="~/img/koiproduct.png" style="width:65%" />
-                    <h3 >Medikoi Probiotic</h3>
-                    </a>
-                    <a href="/menu/Koiproducts"class="small-link">Koi's Product</a>
-                    <div class="price">15.000 đ</div>
-                </div>
-                <div class="card">
-                    <a href="/product/Kusuri" >
-                    <img src="~/img/koiproduct1.png" style="width:87%" />
-                    <h3 >Kusuri Wheatgerm</h3>
-                    </a>
-                    <a href="/menu/Koiproducts"class="small-link">Koi's Product</a>
-                    <div class="price">30.000 đ</div>
-                </div>
-                <div class="card">
-                    <a href="/product/Filtermedium" >
-                    <img src="~/img/pondproduct.png" style="width:38.5%" />
-                    <h3 >Easy-Life Filter Medium</h3>
-                    </a>
-                    <a href="/menu/Pondproducts"class="small-link">Pond's Product</a>
-                    <div class="price">55.000 đ</div>
-                </div>
-                
-                
-                
-               
-                </div>
-            </div>
-        </div>
-    <script src="~/js/index.js"></script>
     <footer>
         <hr id="footer">
         <div id="footer-container">
@@ -114,6 +80,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="~/js/index.js"></script>
     </div>
 </body>
 </html>
