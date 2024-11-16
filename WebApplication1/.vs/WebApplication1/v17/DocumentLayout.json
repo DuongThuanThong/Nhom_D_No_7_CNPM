@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 527,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +42,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "navbar.css",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\navbar.css",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\navbar.css",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\navbar.css",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\navbar.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-16T03:28:52.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "_Navbar.cshtml",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Navbar.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Shared\\_Navbar.cshtml",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Navbar.cshtml",
+              "RelativeToolTip": "WebApplication1\\Pages\\Shared\\_Navbar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T03:28:48.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml.cs",
@@ -42,25 +75,23 @@
               "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T03:18:14.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T03:18:14.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.css",
               "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\Index.css",
               "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\Index.css",
               "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\Index.css",
               "RelativeToolTip": "WebApplication1\\wwwroot\\css\\Index.css",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADAAAAABAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-16T02:44:44.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T02:44:44.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Index.cshtml",
@@ -68,8 +99,7 @@
               "RelativeToolTip": "WebApplication1\\Pages\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T02:42:47.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T02:42:47.782Z"
             }
           ]
         },
