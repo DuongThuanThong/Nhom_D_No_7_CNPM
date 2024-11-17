@@ -22,7 +22,7 @@ namespace Services1
 			return await _repository.GetAllKoi();
 		}
 
-		public async Task<bool> AddKoi(Koi koi)
+		public async Task<int> AddKoi(Koi koi)
 		{
 			return await _repository.AddKoi(koi);
 		}

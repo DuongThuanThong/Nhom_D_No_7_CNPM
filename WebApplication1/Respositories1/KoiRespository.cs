@@ -28,18 +28,11 @@ namespace Respositories1
 			return await _context.Kois.FindAsync(id);
 		}
 
-		public async Task<bool> AddKoi(Koi koi)
+		public async Task<int> AddKoi(Koi koi)
 		{
-			try
-			{
 				await _context.Kois.AddAsync(koi);
 				await _context.SaveChangesAsync();
-				return true;
-			}
-			catch (Exception) 
-			{
-				return false;
-			}
+				return koi.KoiId;
 		}
 		
 		public async Task<bool> UpdateKoi(Koi koi)

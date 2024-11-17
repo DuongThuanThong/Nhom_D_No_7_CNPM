@@ -1,81 +1,128 @@
-﻿@page
-@model WebApplication1.Pages.MykoiModel
-@{
-    ViewData["Title"] = "My Koi";
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/MyKoi_MyPond.css" />
-</head>
-<body>
-    <div class="background"></div>
+﻿    @page
+    @model WebApplication1.Pages.MykoiModel
+    @{
+        ViewData["Title"] = "My Koi";
+    }
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/MyKoi_MyPond.css" />
+        <link href="/css/_gobal.css" rel="stylesheet" />
+    </head>
+    <body>
+        @await Html.PartialAsync("_Navbar")
 
-    @await Html.PartialAsync("_Navbar")
-
-    <div class="container-mykoi">
-        <h2 class="title-mykoi">My Koi</h2>
-        <button class="add-button" onclick="showForm()">+</button>
-
-        <div id="add-koi-form" class="form-container">
-            <div class="form-header">
-                <h2 class="form-title">Add one Koi:</h2>
-                <button class="close-button" onclick="hideForm()">X</button>
+        <div class="koi-management">
+            <!-- Nút tìm kiếm và thêm -->
+            <div class="toolbar">
+                <input type="text" id="searchBar" placeholder="Search for a koi..." oninput="filterKoiList()">
+                <button class="add-button" onclick="openAddModal()">+ Add Koi</button>
             </div>
 
-			<form action="/" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-				<div class="form-content">
-					<label for="koiImage">Add Image:</label>
-					<input type="file" id="koiImage" name = "Img" accept="image/*" required>
+           <!--List Koi fish-->
+            <div class="koi-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hình ảnh</th>
+                            <th>Tên</th>
+                            <th>Tuổi</th>
+                            <th>Giới tính</th>
+                            <th>Kích thước (cm)</th>
+                            <th>Khối lượng (g)</th>
+                            <th>Thông tin chi tiết</th>
+                        </tr>
+                    </thead>
+                    <tbody id="koiTableBody">
+                        <!-- Dữ liệu sẽ được tạo động -->
+                    </tbody>
+                </table>
+            </div>
 
-					<label for="name">Name:</label>
-                    <input type="text" id="name" name="Name" placeholder="Enter name" required>
+            <div id="productAddModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeAddModal()">&times;</span>
+                    <h2 id="modalTitle">Thêm bạn cá Koi mới! </h2>
+                    <form method="post" enctype="multipart/form-data" action="">
+                    @Html.AntiForgeryToken()
 
-					<label for="age">Age:</label>
-                    <input type="text" id="age" name="Age" placeholder="Enter age" required>
 
-					<label for="size">Size (cm):</label>
-                    <input type="number" id="size" name="Size" placeholder="Enter size" required>
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label for="koiImage">Add Image:</label>
+                            <input type="file" id="koiImage" name="Img" accept="image/*" required>
 
-					<label for="weight">Weight (g):</label>
-                    <input type="number" id="weight" name="Weight" placeholder="Enter weight" required>
+                        </div>
 
-                    <label for="body">Body Shape:</label>
-                    <input type="text" id="body" name="Body" placeholder="Enter body shape">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="Name" placeholder="Enter name" required>
+            
+                        </div>
 
-					<label for="sex">Sex:</label>
-					<div class="content-sex">
-                        <input type="radio" id="male" name="Sex" value="Male" checked>
-                        <label for="male">Đực</label>
-                        <input type="radio" id="female" name="Sex" value="Female">
-                        <label for="female">Cái</label>
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="Age" placeholder="Enter age" required min="0">
+ 
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size">Size (cm):</label>
+                            <input type="number" id="size" name="Size" placeholder="Enter size" required min="0" step="any">
+    
+                        </div>
+
+                        <div class="form-group">
+                            <label for="weight">Weight (g):</label>
+                            <input type="number" id="weight" name="Weight" placeholder="Enter weight" required min="0" step="any">
+              
+                        </div>
+
+                        <div class="form-group">
+                            <label for="body">Body Shape:</label>
+                            <input type="text" id="body" name="Body" placeholder="Enter body shape">
+                           
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sex">Sex:</label>
+                            <div class="content-sex">
+                                <input type="radio" id="male" name="Sex" value="Male" checked>
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="Sex" value="Female">
+                                <label for="female">Female</label>
+                            </div>
+                            @Html.ValidationMessage("Sex", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <label for="breed">Breed:</label>
+                            <input type="text" id="breed" name="Breed" placeholder="Enter breed" required>
+                           
+                        </div>
+
+                        <div class="form-group">
+                            <label for="origin">Origin:</label>
+                            <input type="text" id="origin" name="Origin" placeholder="Enter origin">
+                           
+                        </div>
+
+                        <div class="form-group">
+                            <label for="price">Price:</label>
+                            <input type="number" id="price" name="Price" placeholder="Enter price" step="any">
+                            
+                        </div>
+
+                        <button class="submit-button" type="submit">Add Koi</button>
                     </div>
-
-					<label for="pond">Pond:</label>
-					<input type="text" id="pond" name="Pond" placeholder="Main pond" required>
-
-					<label for="breed">Breed:</label>
-					<input type="text" id="breeder" name ="Breed" placeholder="Enter breeder">
-                    
-					<label for="origin">Origin:</label>
-					<input type="text" id="origin" name ="Origin" placeholder="Enter Origin">
-
-                    <label for="price">Price:</label>
-                    <input type="number" id="price" name="Price" placeholder="Enter breeder">
-
-					<button class="submit-button" type="submit">Submit</button>
-				</div>
-			</form>
-
+                </form>
+                </div>  
+            </div>
         </div>
 
-        <div class="koi-list" id="koi-list"></div>
-    </div>
-
-    <!--JS-->
-    <script src="~/js/MyKoi.js"></script>
-</body>
-</html>
+        <!--JS-->
+        <script src="/js/MyKoi.js"></script>
+    </body>
+    </html>

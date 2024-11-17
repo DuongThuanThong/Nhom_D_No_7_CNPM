@@ -11,7 +11,7 @@ namespace Services1.Interfaces
 	{
 		Task<List<Koi>> GetAllKoi();
 		Task<Koi?> GetById(int id);
-		Task <bool> AddKoi(Koi koi);
+		Task <int> AddKoi(Koi koi);
 		Task <bool> UpdateKoi(Koi koi);
 		Task <bool> DeleteKoi(int id);
 	}

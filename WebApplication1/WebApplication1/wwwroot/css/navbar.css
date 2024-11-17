@@ -1,17 +1,20 @@
 ﻿.navbar {
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: #696969;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    height: 52px;
+    top: 0;
+    right:0;
+    left:0;
 }
 
 .nav-list {
-    margin: 10px 20px;
+    margin: 0px 20px;
     display: flex; 
     align-items: center; 
     justify-content: flex-end;
-    border-radius: 5px;
 }
 
 .nav-content { 
@@ -25,17 +28,16 @@
     .nav-content:hover {
         border: 1px solid black;
         background: linear-gradient(135deg, #2575fc, #6a11cb);
-        color: #ffeb3b;
     }
 
 .nav-item {
-    margin: 5px 14px;
+    margin: 0px 14px;
 }
 
 
-    .nav-item-name {
-        color: black;
-        font-size: 15px;
-        font-weight:bolder;
-        padding-left:10px;
-    }
+.nav-item-name {
+    color: #ffeb3b;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
