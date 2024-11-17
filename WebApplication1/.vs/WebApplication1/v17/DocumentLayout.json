@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\mykoi.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\mykoi.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{897D85A3-EB85-4C84-AEEF-30C144A5E389}|Respositories1\\Respositories1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\respositories1\\pondrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{897D85A3-EB85-4C84-AEEF-30C144A5E389}|Respositories1\\Respositories1.csproj|solutionrelative:respositories1\\pondrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\pages\\mykoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\mykoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\wwwroot\\css\\mykoi_mypond.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\mykoi_mypond.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|d:\\_\u0111\u1ED3_\u00E1n_cnpm\\nhom_d_no_7_cnpm\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE1B0AE-6CA2-4AB5-A4E5-384E355EB92A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 153,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,39 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyKoi_MyPond.css",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\MyKoi_MyPond.css",
-              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\MyKoi_MyPond.css",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\wwwroot\\css\\MyKoi_MyPond.css",
-              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\MyKoi_MyPond.css",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAAAL8AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-17T09:05:50.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T08:32:29.798Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Mykoi.cshtml.cs",
-              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Mykoi.cshtml.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Mykoi.cshtml.cs",
-              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Mykoi.cshtml.cs",
-              "RelativeToolTip": "WebApplication1\\Pages\\Mykoi.cshtml.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAC8AAAASAAAA",
+              "Title": "PondRespository.cs",
+              "DocumentMoniker": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\Respositories1\\PondRespository.cs",
+              "RelativeDocumentMoniker": "Respositories1\\PondRespository.cs",
+              "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\Respositories1\\PondRespository.cs",
+              "RelativeToolTip": "Respositories1\\PondRespository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T06:46:42.871Z",
+              "WhenOpened": "2024-11-17T13:05:31.89Z",
               "EditorCaption": ""
             },
             {
@@ -81,9 +49,9 @@
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Mykoi.cshtml",
               "ToolTip": "D:\\_\u0110\u1ED3_\u00C1n_CNPM\\Nhom_D_No_7_CNPM\\WebApplication1\\WebApplication1\\Pages\\Mykoi.cshtml",
               "RelativeToolTip": "WebApplication1\\Pages\\Mykoi.cshtml",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAADEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T03:59:06.383Z"
+              "WhenOpened": "2024-11-17T12:25:09.716Z"
             }
           ]
         },
