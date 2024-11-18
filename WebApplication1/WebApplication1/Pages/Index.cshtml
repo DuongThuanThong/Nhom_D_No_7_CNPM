@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="~/css/style.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <title>Trang chủ</title>
 
 </head>
@@ -16,17 +17,40 @@
 
     <header class="navbar">
      <!--Navigation-->
-        <ul class="nav-list ">
 
-            <li class="nav-item" >  
-                 <a href="#">  
-                      <img src="~/img/user.png" width=40px height=40px  />  
-                 </a>  
-            </li> 
-            <li class="nav-item" >  
-                 <a href="#" style="font-size: 20px;">Nguyễn Văn B</a>  
-            </li>  
-    </ul>
+        <div class="header-1">
+            <ul>
+                <li>
+                    <a href="">Trang Chủ</a>
+                </li>
+                <li>
+                    <a href="">My Koi</a>
+                </li>
+                <li>
+                    <a href=""> My Pond</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">Shop</a>
+                </li
+            </ul>
+            <img src="/img/logo.jpg" alt="logo">
+            
+            <a href="#" class="logo-user">
+                <i class="fa-solid fa-user" id="fa-user"></i>
+                Nguyễn Văn A
+            </a>
+            
+
+            <a href="#" class="logo-shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Giỏ Hàng
+            </a>
+        </div>
+        
+        
  </header>  
     <!--Container-->   
     <div class="container">
@@ -77,7 +101,7 @@
             </a>
         </div>
         <div class="item">
-            <a href="#"  class="no-underline" > 
+            <a href="/Blog"  class="no-underline" > 
             <center>
             <img src="~/img/blog.png" width=100px height=100px  />
             <p>Blog</p>

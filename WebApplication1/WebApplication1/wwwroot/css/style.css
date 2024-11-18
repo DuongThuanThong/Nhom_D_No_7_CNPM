@@ -1,0 +1,181 @@
+body {  
+    margin: 0;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;
+}  
+.background {
+    
+    position: fixed; /* Đặt vị trí hình nền cố định */
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/background.jpg'); 
+    background-size: cover; /* Giữ nguyên tỷ lệ hình ảnh */
+    background-position: center; 
+    z-index: -1; /* Đặt hình nền phía sau các nội dung khác */
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Đổ bóng cho thanh nav */
+    z-index: 1000; /* Đảm bảo thanh nav nằm trên các nội dung khác */
+}  
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin:  10px; 
+    padding: 0 20px;
+}
+
+.header-1 ul{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.header-1 li {
+    margin: 0 5px;
+    display: flex; 
+    align-items: center;
+    
+}
+
+.header-1 a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    
+    font-size: 20px;
+}
+  
+.header-1 a:hover {
+    background-color: #f0f0f0;
+    text-decoration: underline;
+}
+
+.header-1 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 130px;
+}
+
+.header-1 .logo-user {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: auto; 
+    margin-left: 200PX;
+}
+
+.header-1 .logo-user:hover {
+    background-color: transparent;
+}
+
+.header-1 .logo-shopping {
+    margin-left: 120px;
+    background-color: #13cb5c;
+    color: white;
+    border-radius: 50px;
+}
+
+.header-1 .logo-shopping:hover {
+    background-color: green;
+
+}
+
+.nav-list {
+    list-style: none; 
+    padding: 0px;
+    margin: 10px; 
+    display: flex; 
+    align-items: center;
+    background-color:white ;         
+    flex-direction:row-reverse;
+}
+
+.header-1 .logo-user {
+    margin-left: 130px;
+    
+}
+
+.header-1 .logo-user:hover {
+    text-decoration: none;
+    
+}
+
+#fa-user {
+    background-color: #e9b50b; 
+    width: 30px; 
+    height: 30px; 
+    padding: 5px; 
+    margin-right: 10px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.nav-item {
+    font-size: 20px;
+    margin: 5px 14px; /* Khoảng cách giữa các mục */
+}
+
+ .nav-item a {  
+     font-family: 'Verdana', sans-serif;
+     color: black;
+     text-decoration: none;   /*xóa gạch chân do web tự tạo */
+     font-size: 15px;
+    }
+
+ .nav-item a:hover {
+    color:#bd5252;             
+}
+
+.container {    
+    padding: 280px 400px 80px;
+    display: grid;  
+    grid-template-columns: repeat(3, 200px);  /* chia các khung thành 3 khung mỗi hàng*/
+    gap: 20px; 
+    position: relative; /* Để nó nằm trên hình nền */
+    z-index: 1; /* Đảm bảo nội dung nằm phía trên hình nền */
+
+}
+
+.item {
+    margin:-5px -5px;
+    padding: 5px ;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    background-color: rgb(202, 158, 165);
+}
+.item:hover {
+    transform: scale(1.1);
+    transition:0.5s ease;
+    background-color: #d88268;
+}
+.item a{
+    text-decoration: underline;
+    
+}
+.item a.no-underline{
+    text-decoration: none;
+}
+.item p{
+    font-size: 24px;
+    color: white;
+}
+
+.item p:hover{
+    color: blue;
+}
