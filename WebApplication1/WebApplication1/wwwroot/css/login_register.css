@@ -1,0 +1,102 @@
+﻿body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dcbf05; /* Màu nền vàng */
+}
+
+#login_register {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-sign {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+    .input-sign input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .input-sign i {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #999;
+    }
+
+.sign-up-button {
+    background-color: #dcbf05;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .sign-up-button:hover {
+        opacity: 0.9;
+    }
+
+.additional-options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .additional-options p {
+        margin-bottom: 10px;
+    }
+
+    .additional-options a {
+        color: #dcbf05;
+        text-decoration: none;
+    }
+
+.alert {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: hidden-alert 4s forwards;
+}
+
+@keyframes hidden-alert {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+} 

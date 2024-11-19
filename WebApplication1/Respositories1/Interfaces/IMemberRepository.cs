@@ -11,8 +11,9 @@ namespace Respositories1.Interfaces
     {
         Task<List<Member>> GetAllMember();
         Task<Member?> GetById(int id);
-        Task<bool> AddMember(Member member);
+        Task<Member> AddMember(Member member);
         Task<bool> UpdateMember(Member member);
         Task<bool> DeleteMember(int id);
+        Task<Member?> GetMemberByPhone(string phone);
     }
 }

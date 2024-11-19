@@ -8,31 +8,28 @@ using Microsoft.AspNetCore.Mvc;
 
 
 
-
-
-
 var builder = WebApplication.CreateBuilder(args);
     
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-// Thêm cấu hình này
-builder.Services.Configure<FormOptions>(options =>
-{
-    options.MultipartBodyLengthLimit = 10000000; // 10MB
-});
-
-
+// Add service Session
+builder.Services.AddSession();
+builder.Services.AddHttpContextAccessor();
 //DI
 builder.Services.AddDbContext<KoiCareSystemAhContext>();
 
 //DI Repository
 builder.Services.AddScoped<IKoiRespository, KoiRespository>();
 builder.Services.AddScoped<IGrowthKoiRepository, GrowthKoiRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 
 //DI Services
 builder.Services.AddScoped<IKoiService,KoiService>();
 builder.Services.AddScoped<IGrowthKoiService, GrowthKoiService>();
+builder.Services.AddScoped<IUserService, UserService>();
+
 
 
 var app = builder.Build();
@@ -48,8 +45,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseDeveloperExceptionPage();
 
+app.UseSession();
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();

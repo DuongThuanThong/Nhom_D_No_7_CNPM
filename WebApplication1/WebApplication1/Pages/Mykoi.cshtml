@@ -14,7 +14,7 @@
     <body>
         @await Html.PartialAsync("_Navbar")
 
-        <div class="koi-management">
+        <div class="management">
             <!-- Nút tìm kiếm và thêm -->
             <div class="toolbar">
                 <input type="text" id="searchBar" placeholder="Search for a koi..." oninput="filterKoiList()">
@@ -22,7 +22,7 @@
             </div>
 
            <!--List Koi fish-->
-            <div class="koi-list">
+            <div class="list">
                 <table>
                     <thead>
                         <tr>
@@ -32,10 +32,11 @@
                             <th>Giới tính</th>
                             <th>Kích thước (cm)</th>
                             <th>Khối lượng (g)</th>
+                            <th>Hồ đang ở</th>
                             <th>Thông tin chi tiết</th>
                         </tr>
                     </thead>
-                    <tbody id="koiTableBody">
+                    <tbody id="TableBody">
                         <!-- Dữ liệu sẽ được tạo động -->
                     </tbody>
                 </table>
@@ -45,7 +46,7 @@
                 <div class="modal-content">
                     <span class="close" onclick="closeAddModal()">&times;</span>
                     <h2 id="modalTitle">Thêm bạn cá Koi mới! </h2>
-                    <form method="post" enctype="multipart/form-data" action="">
+                <form method="post" enctype="multipart/form-data" action="">
                     @Html.AntiForgeryToken()
 
 
@@ -94,7 +95,6 @@
                                 <input type="radio" id="female" name="Sex" value="Female">
                                 <label for="female">Female</label>
                             </div>
-                            @Html.ValidationMessage("Sex", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">

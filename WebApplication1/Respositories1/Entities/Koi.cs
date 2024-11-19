@@ -15,6 +15,10 @@ public partial class Koi
 
     public string? Origin { get; set; }
 
+    public int PondId { get; set; }
+
+    public int UserId { get; set; }
+
     public virtual ICollection<Feed> Feeds { get; set; } = new List<Feed>();
 
     public virtual ICollection<GrowthKoi> GrowthKois { get; set; } = new List<GrowthKoi>();

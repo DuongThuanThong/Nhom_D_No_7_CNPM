@@ -1,66 +1,128 @@
-@page
-@model WebApplication1.Pages.MyPond
+﻿    @page
+    @model WebApplication1.Pages.MykoiModel
 @{
+    ViewData["Title"] = "My Pond";
 }
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/MyKoi_MyPond.css">
-    <title>My Pond</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/MyKoi_MyPond.css" />
+    <link href="/css/_gobal.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="background"></div>
-
     @await Html.PartialAsync("_Navbar")
 
-    <div class="container-mypond">
-        <h2 class="title-mypond">My Pond</h2>
-        <button style="background-color: orange; width: 50px; height: 50px;" onclick="showForm()">+</button>
-
-        <div id="add-pond-form">
-            <div class="form-header">
-                <h2 style="border-bottom: 1px solid black;">Add one Pond Koi:</h2>
-                <button onclick="hideForm()">X</button>
-            </div>
-
-            <div class="pond-inform" style="border: 1px dashed black; color: black;">
-                <label for="PondImage">Add Image:</label>
-                <input type="file" id="PondImage" accept="image/*">
-
-                <label for="name">- Name Pond:</label>
-                <input type="text" id="name" placeholder="Enter Name Pond">
-
-                <label for="number">- Number of Fish:</label>
-                <input type="text" id="number" placeholder="Enter Number">
-
-                <label for="volume">- Volume:</label>
-                <input type="text" id="volume" placeholder="Enter Volume">
-
-                <label for="depth">- Depth:</label>
-                <input type="text" id="depth" placeholder="Enter Depth">
-
-                <label for="pumping">- Pumping capacity:</label>
-                <input type="text" id="pumping" placeholder="Enter Pumping capacity">
-
-                <label for="drains">- Drains:</label>
-                <input type="text" id="drains" placeholder="Main Drains">
-
-                <label for="skimmers">- Skimmers:</label>
-                <input type="text" id="skimmers" placeholder="Enter Skimmers">
-
-                <button style="margin-left: 200px; margin-top: 15px; margin-bottom: 10px;" type="button" onclick="submitPond()">Submit</button>
-            </div>
+    <div class="management">
+        <!-- Nút tìm kiếm và thêm -->
+        <div class="toolbar">
+            <input type="text" id="searchBar" placeholder="Search for a pond..." >
+            <button class="add-button" onclick="openAddModal()">+ Add New Pond</button>
         </div>
 
-        <div class="pond-list" id="pond-list">
+        <!--List Koi fish-->
+        <div class="list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên Hồ</th>
+                        <th>Kích thước</th>
+                        <th>Thể tích</th>
+                        <th>Độ sâu</th>
+                        <th>Công suất máy bơm</th>
+                        <th>Số cống thoát nước</th>
+                        <th>Thông số nước</th>
+                    </tr>
+                </thead>
+                <tbody id="TableBody">
+                    <!-- Dữ liệu sẽ được tạo động -->
+                </tbody>
+            </table>
+        </div>
 
+        <div id="productAddModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAddModal()">&times;</span>
+                <h2 id="modalTitle">Thêm bạn cá Koi mới! </h2>
+                <form method="post" enctype="multipart/form-data" action="">
+                    @Html.AntiForgeryToken()
+
+
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label for="Image">Add Image:</label>
+                            <input type="file" id="koiImage" name="Img" accept="image/*" required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="Name" placeholder="Enter name" required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="Age" placeholder="Enter age" required min="0">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size">Size (cm):</label>
+                            <input type="number" id="size" name="Size" placeholder="Enter size" required min="0" step="any">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="weight">Weight (g):</label>
+                            <input type="number" id="weight" name="Weight" placeholder="Enter weight" required min="0" step="any">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="body">Body Shape:</label>
+                            <input type="text" id="body" name="Body" placeholder="Enter body shape">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sex">Sex:</label>
+                            <div class="content-sex">
+                                <input type="radio" id="male" name="Sex" value="Male" checked>
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="Sex" value="Female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="breed">Breed:</label>
+                            <input type="text" id="breed" name="Breed" placeholder="Enter breed" required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="origin">Origin:</label>
+                            <input type="text" id="origin" name="Origin" placeholder="Enter origin">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="price">Price:</label>
+                            <input type="number" id="price" name="Price" placeholder="Enter price" step="any">
+
+                        </div>
+
+                        <button class="submit-button" type="submit">Add Koi</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
     <!--JS-->
-   <script src="~/js/MyPond.js"></script>
-
+    <script src="/js/MyKoi.js"></script>
 </body>
 </html>

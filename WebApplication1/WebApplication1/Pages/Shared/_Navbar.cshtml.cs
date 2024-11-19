@@ -7,6 +7,9 @@ namespace WebApplication1.Pages.Shared
     {
         public void OnGet()
         {
+            
         }
+
+
     }
 }

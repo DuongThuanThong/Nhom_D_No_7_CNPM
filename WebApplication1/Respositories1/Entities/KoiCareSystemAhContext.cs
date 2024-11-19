@@ -336,7 +336,7 @@ public partial class KoiCareSystemAhContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("password");
             entity.Property(e => e.RoleId).HasColumnName("role_id");
-            entity.Property(e => e.Username)
+            entity.Property(e => e.UserName)
                 .HasMaxLength(50)
                 .HasColumnName("username");
 

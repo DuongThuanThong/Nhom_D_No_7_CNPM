@@ -19,18 +19,11 @@ namespace Respositories1
             _context = context; 
         }
 
-        public async Task<bool> AddMember(Member member)
+        public async Task<Member> AddMember(Member member)
         {
-            try
-            {
                 await _context.AddAsync(member);
                 await _context.SaveChangesAsync();
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+                return member;
         }
 
         public async Task<bool> DeleteMember(int id)
@@ -60,6 +53,11 @@ namespace Respositories1
         public async Task<Member?> GetById(int id)
         {
             return await _context.Members.FindAsync(id);
+        }
+
+        public async Task<Member?> GetMemberByPhone(string phone)
+        {
+            return await _context.Members.FirstOrDefaultAsync(x => x.Phone == phone);
         }
 
         public async Task<bool> UpdateMember(Member member)

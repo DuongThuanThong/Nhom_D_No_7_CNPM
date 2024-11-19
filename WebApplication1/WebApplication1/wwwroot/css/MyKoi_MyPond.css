@@ -1,4 +1,4 @@
-﻿.koi-management {
+﻿.management {
     width: 90%;
     margin: 80px auto;
 }
@@ -32,18 +32,18 @@
         background-color: #0056b3;
     }
 
-.koi-list table {
+.list table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.koi-list th, .koi-list td {
+.list th, .list td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
 }
 
-.koi-list th {
+.list th {
     background-color: #f4f4f4;
     font-weight: bold;
 }

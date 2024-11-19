@@ -1,5 +1,5 @@
-@page
-@model WebApplication1.Pages.LoginModel
+﻿@page
+@model WebApplication1.Pages.RegisterModel
 @{
 }
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <title>Register</title>
     <link rel="stylesheet" href="/css/login_register.css">
     <script src="https://kit.fontawesome.com/eff669a9ab.js" crossorigin="anonymous"></script>
 </head>
@@ -20,8 +20,17 @@
     }
     <div id="login_register">
         <h2>Log In</h2>
-        <form method="post" action="">
+        <form method="post" action=""  asp-page-handler="Register">
             @Html.AntiForgeryToken()
+
+            <div class="validation-summary">
+                <div asp-validation-summary="All" class="text-danger"></div>
+            </div>
+            <div class="input-sign">
+                <input type="text" name="userName" placeholder="User name" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
             <div class="input-sign">
                 <input type="email" name="email" placeholder="Email" required>
                 <i class="fa-solid fa-envelope"></i>
@@ -32,13 +41,18 @@
                 <i class="fa-solid fa-lock"></i>
             </div>
 
-            <button type="submit" id="signUpButton" class="sign-up-button">Sign Up</button>
+            <div class="input-sign">
+                <input type="number" name="phone" placeholder="Phone number" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <button type="submit" id="signUpButton" class="sign-up-button">Register</button>
         </form>
 
         <div class="additional-options">
-            <p><a href="#">Forgot your password?</a></p>
-            <p>Don't have an account? <a href="/register">Register here</a></p>
+            <p>You have an account? <a href="/Login">Login here</a></p>
         </div>
+
     </div>
-</body> 
-</html> 
+</body>
+</html>

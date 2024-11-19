@@ -21,6 +21,9 @@ public partial class Pond
 
     public string? Image { get; set; }
 
+    public int UserId { get; set; }
+
+
     public virtual ICollection<MessageAlbertWater> MessageAlbertWaters { get; set; } = new List<MessageAlbertWater>();
 
     public virtual ICollection<WaterParameter> WaterParameters { get; set; } = new List<WaterParameter>();
