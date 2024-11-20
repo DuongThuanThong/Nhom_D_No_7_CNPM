@@ -44,7 +44,7 @@ namespace WebApplication1.Pages
                 }
 
                 HttpContext.Session.SetString("UserId", user.UserId.ToString());
-                HttpContext.Session.SetString("Username", user.UserName);
+                HttpContext.Session.SetString("Username", user.Username);
                 return RedirectToPage("/Index");
             }
             catch (Exception)

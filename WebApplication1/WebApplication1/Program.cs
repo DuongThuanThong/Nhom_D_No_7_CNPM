@@ -24,11 +24,13 @@ builder.Services.AddScoped<IKoiRespository, KoiRespository>();
 builder.Services.AddScoped<IGrowthKoiRepository, GrowthKoiRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+builder.Services.AddScoped<IPondRepository, PondRespository>();
 
 //DI Services
 builder.Services.AddScoped<IKoiService,KoiService>();
 builder.Services.AddScoped<IGrowthKoiService, GrowthKoiService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IPondService, PondService>();
 
 
 

@@ -23,6 +23,7 @@
     padding: 5px 10px; 
     border-radius: 5px;
     cursor:pointer;
+    min-width:150px;
 }
 
     .nav-content:hover {
@@ -41,3 +42,43 @@
     font-weight: bolder;
     padding-left: 10px;
 }
+
+
+
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+    .dropdown-menu.show {
+        display: block;
+        position: absolute;
+        right: 3%;
+        top: 100%;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        z-index: 999999;
+        width: 150px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+        overflow: hidden;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+        font-size: 16px;
+        display: block;
+        padding: 10px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+    }
+
+        .dropdown-menu a:hover {
+            background-color: orange;
+            color: white;
+        }

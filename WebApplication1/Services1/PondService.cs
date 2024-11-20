@@ -1,5 +1,6 @@
 ﻿using Respositories1.Entities;
 using Respositories1.Interfaces;
+using Services1.DTO;
 using Services1.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -16,9 +17,20 @@ namespace Services1
             _repository = repository;
         }
 
-        public async Task<bool> AddPond(Pond pond)
+        public async Task<bool> AddPond(PondDTO ponddto)
         {
-           return await _repository.AddPond(pond);
+            var pond = new Pond
+            {
+                Name = ponddto.Name,
+                Size = ponddto.Size,
+                PumpCapacity = ponddto.PumpCapacity,
+                DrainCount = ponddto.DrainCount,
+                Volume = ponddto.Volume,
+                Depth = ponddto.Depth,
+                Image = ponddto.Image,
+                UserId = ponddto.UserId,
+            };
+            return await _repository.AddPond(pond);
         }
 
         public async Task<bool> DeletePond(int id)
@@ -26,9 +38,32 @@ namespace Services1
             return await _repository.DeletePond(id);
         }
 
-        public async Task<List<Pond>> GetAllPond()
+        public async Task<List<PondDTO>> GetAllPond(int userId)
         {
-            return await _repository.GetAllPond();
+            var ponds = await _repository.GetAllPond(userId);
+
+            if (ponds == null)
+            {
+                return new List<PondDTO>();
+            }
+            List<PondDTO> pondDTOs = new List<PondDTO>();
+
+            foreach (var pond in ponds)
+            {
+                var pondDTO = new PondDTO
+                {
+                    PondId = pond.PondId,
+                    Name = pond.Name,
+                    Size = pond.Size,
+                    PumpCapacity = pond.PumpCapacity,
+                    DrainCount = pond.DrainCount,
+                    Volume = pond.Volume,
+                    Depth = pond.Depth,
+                    Image = pond.Image
+                };
+                pondDTOs.Add(pondDTO);
+            }
+                return pondDTOs;
         }
 
         public async Task<Pond?> GetById(int id)

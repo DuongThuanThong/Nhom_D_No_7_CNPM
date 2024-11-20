@@ -10,7 +10,7 @@ namespace Respositories1.Interfaces
     public interface IPondRepository
     {
    
-		Task<List<Pond>> GetAllPond();
+		Task<List<Pond>> GetAllPond(int userId);
         Task<Pond?> GetById(int id);
         Task<bool> AddPond(Pond pond);
         Task<bool> UpdatePond(Pond pond);

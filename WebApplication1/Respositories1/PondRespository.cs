@@ -17,9 +17,9 @@ namespace Respositories1
             _context = context;
         }
 
-        public async Task<List<Pond>> GetAllPond()
+        public async Task<List<Pond>> GetAllPond(int userId)
         {
-            return await _context.Ponds.ToListAsync();
+            return await _context.Ponds.Where(p => p.UserId == userId).ToListAsync();
         }
         public async Task<Pond?> GetById(int id)
         {

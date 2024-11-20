@@ -9,10 +9,11 @@ namespace Respositories1.Interfaces
 {
     public interface IGrowthKoiRepository
     {
-        Task<List<GrowthKoi>> GetAllGrowthKoi();
+        Task<List<GrowthKoi>> GetAllGrowthKoi(int koiId);
         Task<GrowthKoi?> GetByIdGrowthKoi(int id);
         Task<bool> AddGrowthKoi(GrowthKoi growthKoi);
         Task<bool> UpdateGrowthKoi(GrowthKoi growthKoi);
         Task<bool> DeleteGrowthKoi(int id);
+        Task<GrowthKoi?> GetGrowthKoi(int KoiIdid);
     }
 }

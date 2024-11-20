@@ -20,12 +20,6 @@ namespace Services1
             _userRepository = userRepository;
             _memberRepository = memberRepository;
         }
-
-
-
-
-
-        
         public async Task<bool> AddUser(RegisterDTO registerdto)
         {
             try
@@ -33,7 +27,7 @@ namespace Services1
 
                 var user = new User
                 {
-                    UserName = registerdto.UserName != null  ? registerdto.UserName : "",
+                    Username = registerdto.UserName != null  ? registerdto.UserName : "",
                     Email = registerdto.Email != null ? registerdto.Email : "",
                     Password = registerdto.Password != null ? registerdto.Password : "",
                     RoleId = 2

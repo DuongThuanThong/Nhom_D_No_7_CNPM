@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\img\koi\" />
+    <Folder Include="wwwroot\img\pond\" />
   </ItemGroup>
 
   <ItemGroup>

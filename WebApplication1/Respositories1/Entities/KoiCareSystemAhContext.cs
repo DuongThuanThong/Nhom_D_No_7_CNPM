@@ -157,6 +157,17 @@ public partial class KoiCareSystemAhContext : DbContext
             entity.Property(e => e.Origin)
                 .HasMaxLength(250)
                 .HasColumnName("origin");
+            entity.Property(e => e.PondId).HasColumnName("pond_id");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+
+            entity.HasOne(d => d.Pond).WithMany(p => p.Kois)
+                .HasForeignKey(d => d.PondId)
+                .HasConstraintName("FK__Koi__pond_id__308E3499");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Kois)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK__Koi__user_id__318258D2");
         });
 
         modelBuilder.Entity<Member>(entity =>
@@ -265,7 +276,13 @@ public partial class KoiCareSystemAhContext : DbContext
                 .HasColumnName("name");
             entity.Property(e => e.PumpCapacity).HasColumnName("pump_capacity");
             entity.Property(e => e.Size).HasColumnName("size");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
             entity.Property(e => e.Volume).HasColumnName("volume");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Ponds)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK__Pond__user_id__32767D0B");
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -336,7 +353,7 @@ public partial class KoiCareSystemAhContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("password");
             entity.Property(e => e.RoleId).HasColumnName("role_id");
-            entity.Property(e => e.UserName)
+            entity.Property(e => e.Username)
                 .HasMaxLength(50)
                 .HasColumnName("username");
 

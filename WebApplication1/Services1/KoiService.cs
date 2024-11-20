@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Respositories1.Interfaces;
 using Respositories1.Entities;
+using Services1.DTO;
 
 namespace Services1
 {
@@ -17,15 +18,20 @@ namespace Services1
 			_repository = repository;
 		}
 
-		public async Task<List<Koi>> GetAllKoi()
+		public async Task<int> AddKoi(KoiDTO koidto)
 		{
-			return await _repository.GetAllKoi();
-		}
+			var newKoi = new Koi()
+			{
+				Name = koidto.Name,
+				Gender = koidto.Gender,
+				Breed = koidto.Breed,
+				Origin = koidto.Origin,
+				PondId = koidto.PondId,
+				UserId = koidto.UserId
+			};
 
-		public async Task<int> AddKoi(Koi koi)
-		{
-			return await _repository.AddKoi(koi);
-		}
+            return await _repository.AddKoi(newKoi);
+        }
 
 		public async Task<bool> DeleteKoi(int id)
 		{
@@ -41,5 +47,32 @@ namespace Services1
 		{
 			return await _repository.UpdateKoi(koi);
 		}
-	}
+
+        public async Task<List<KoiDTO>> GetAllKoi(int userId)
+        {
+            var kois = await _repository.GetAllKoi(userId);
+
+            if (kois == null)
+            {
+				Console.WriteLine("hello");
+                return new List<KoiDTO>();
+            }
+            List<KoiDTO> KoiDTOs = new List<KoiDTO>();
+
+            foreach (var koi in kois)
+            {
+                var koiDTO = new KoiDTO
+                {
+                  KoiId = koi.KoiId,
+				  Name = koi.Name,
+				  Gender = koi.Gender,
+				  Breed = koi.Breed,
+				  Origin = koi.Origin,
+				  PondId = koi.PondId,
+                };
+                KoiDTOs.Add(koiDTO);
+            }
+            return KoiDTOs;
+        }
+    }
 }

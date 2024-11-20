@@ -17,9 +17,9 @@ namespace Respositories1
         {
             _context = context;
         }
-        public async Task<List<GrowthKoi>> GetAllGrowthKoi()
+        public async Task<List<GrowthKoi>> GetAllGrowthKoi(int koiId)
         {
-            return await _context.GrowthKois.ToListAsync();
+            return await _context.GrowthKois.Where(p=> p.KoiId == koiId).ToListAsync();
         }
         public async Task<GrowthKoi?> GetByIdGrowthKoi(int id)
         {
@@ -69,6 +69,9 @@ namespace Respositories1
             }
         }
 
-
+        public async Task<GrowthKoi?> GetGrowthKoi(int KoiIdid)
+        {
+            return await _context.GrowthKois.Where(k => k.KoiId == KoiIdid).OrderByDescending(k=>k.GrowthId).FirstOrDefaultAsync();
+        }
     }
 }

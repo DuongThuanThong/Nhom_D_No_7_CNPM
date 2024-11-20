@@ -33,11 +33,30 @@
                             <th>Kích thước (cm)</th>
                             <th>Khối lượng (g)</th>
                             <th>Hồ đang ở</th>
+                            <th>Giá</th>
                             <th>Thông tin chi tiết</th>
                         </tr>
                     </thead>
                     <tbody id="TableBody">
-                        <!-- Dữ liệu sẽ được tạo động -->
+                    @foreach (var koi in Model.GetListKois)
+                    {
+                         var growKoi = Model.ListLastGrowthKois[koi.KoiId];
+                        <tr>
+                            <td><img src="@growKoi.Image" alt="Koi Image" width="100" /></td>
+                            <td>@koi.Name</td>
+                            <td>@growKoi.Age</td>
+                            <td>@(koi.Gender == 1 ? "Đực" : "Cái")</td>
+                            <td>@growKoi.Size</td>
+                            <td>@growKoi.Weight</td>
+                            <td>@Model.GetListPonds.FirstOrDefault(p => p.PondId == koi.PondId)?.Name</td>
+                            <td>@growKoi.Price</td>
+                            <td>
+                                <a href="#">View detail</a>
+                            </td>
+                        </tr> 
+
+              
+                    }
                     </tbody>
                 </table>
             </div>
@@ -98,6 +117,18 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="pond">Pond:</label>
+                            <select id="pondSelect" name="SelectedPondId" required>
+                                <option value="">-- Select a pond --</option>
+                                @foreach (var pond in Model.GetListPonds)
+                                {
+                                    <option value="@pond.PondId">@pond.Name</option>
+                                }
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
                             <label for="breed">Breed:</label>
                             <input type="text" id="breed" name="Breed" placeholder="Enter breed" required>
                            
@@ -106,13 +137,11 @@
                         <div class="form-group">
                             <label for="origin">Origin:</label>
                             <input type="text" id="origin" name="Origin" placeholder="Enter origin">
-                           
                         </div>
 
                         <div class="form-group">
                             <label for="price">Price:</label>
                             <input type="number" id="price" name="Price" placeholder="Enter price" step="any">
-                            
                         </div>
 
                         <button class="submit-button" type="submit">Add Koi</button>

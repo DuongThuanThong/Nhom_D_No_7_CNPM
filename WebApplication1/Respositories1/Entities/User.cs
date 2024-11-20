@@ -11,7 +11,7 @@ public partial class User
 
     public string Password { get; set; } = null!;
 
-    public string UserName { get; set; } = null!;
+    public string Username { get; set; } = null!;
 
     public int? RoleId { get; set; }
 
@@ -19,7 +19,11 @@ public partial class User
 
     public virtual ICollection<Blog> Blogs { get; set; } = new List<Blog>();
 
+    public virtual ICollection<Koi> Kois { get; set; } = new List<Koi>();
+
     public virtual ICollection<Member> Members { get; set; } = new List<Member>();
+
+    public virtual ICollection<Pond> Ponds { get; set; } = new List<Pond>();
 
     public virtual Role? Role { get; set; }
 

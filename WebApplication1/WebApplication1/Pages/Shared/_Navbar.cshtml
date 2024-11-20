@@ -1,18 +1,59 @@
 ﻿@using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
+
 <header class="navbar">
     <link href="~/css/navbar.css" rel="stylesheet" />
     <ul class="nav-list" style="list-style:none">
         <li class="nav-item">
             <div class="nav-content">
-                <img src="~/img/user.png" width=40px height=40px />
+                <img src="~/img/user.png" width="40px" height="40px" class="nav-avatar" />
                 <span class="nav-item-name">
                     @{
-                        var username = HttpContextAccessor.HttpContext?.Session.GetString("Username") ?? "Login/Register";
+                        var username = HttpContextAccessor.HttpContext?.Session.GetString("Username");
                     }
-                    @username
+                    @if (string.IsNullOrEmpty(username))
+                    {
+                        <span>Login/Register</span>
+                    }
+                    else
+                    {
+                        <span>@username</span>
+                    }
                 </span>
+
+                <!-- Dropdown menu -->
+                <div class="dropdown-menu">
+                    @if (string.IsNullOrEmpty(username))
+                    {
+                        <a href="/Login" class="dropdown-item">Đăng nhập</a>
+                        <a href="/Register" class="dropdown-item">Đăng ký</a>
+                    }
+                    else
+                    {
+                        <a href="#" class="dropdown-item">Cập nhật thông tin</a>
+                        <a href="/Logout" class="dropdown-item">Đăng xuất</a>
+                    }
+                </div>
             </div>
         </li>
     </ul>
 </header>
+
+    
+<script>
+    //Dong mo dropdown
+    document.addEventListener('DOMContentLoaded', function () {
+        let activebtn = document.querySelector('.nav-content');
+        let dropdown = document.querySelector('.dropdown-menu');
+
+        activebtn.addEventListener('click', function () {
+            dropdown.classList.toggle('show');
+        });
+        document.addEventListener('click', function (event) {
+            if (!dropdown.contains(event.target) && !activebtn.contains(event.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+
+    });
+</script>

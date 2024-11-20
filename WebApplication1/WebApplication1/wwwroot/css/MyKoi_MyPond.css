@@ -122,6 +122,7 @@ label {
 input[type="text"],
 input[type="number"],
 input[type="file"],
+select,
 textarea {
     width: 95%;
     padding: 10px;
@@ -140,6 +141,9 @@ textarea {
 input[type="radio"] {
     margin-right: 5px;
 }
+
+
+
 
 .content-sex {
     display: flex;
@@ -193,3 +197,34 @@ html, body {
     color: red;
     font-size: 0.9em;
 }
+
+.alert {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    z-index: 1000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: hidden-alert 4s forwards;
+}
+
+@keyframes hidden-alert {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+} 

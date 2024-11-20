@@ -1,5 +1,5 @@
 ﻿    @page
-    @model WebApplication1.Pages.MykoiModel
+    @model WebApplication1.Pages.MyPondModel
 @{
     ViewData["Title"] = "My Pond";
 }
@@ -13,7 +13,12 @@
 </head>
 <body>
     @await Html.PartialAsync("_Navbar")
-
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <div class="alert">
+            @ViewData["ErrorMessage"]
+        </div>
+    }
     <div class="management">
         <!-- Nút tìm kiếm và thêm -->
         <div class="toolbar">
@@ -21,11 +26,12 @@
             <button class="add-button" onclick="openAddModal()">+ Add New Pond</button>
         </div>
 
-        <!--List Koi fish-->
+        <!--List Koi pond-->
         <div class="list">
             <table>
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Hình ảnh</th>
                         <th>Tên Hồ</th>
                         <th>Kích thước</th>
@@ -37,7 +43,23 @@
                     </tr>
                 </thead>
                 <tbody id="TableBody">
-                    <!-- Dữ liệu sẽ được tạo động -->
+                    @foreach (var pond in Model.GetListPonds)
+                    {
+                        <tr>
+                            <td>@pond.PondId</td>
+                            <td><img src="@pond.Image" alt="Pond Image" width="100" /></td>
+                            <td>@pond.Name</td>
+                            <td>@pond.Size</td>
+                            <td>@pond.Volume</td>
+                            <td>@pond.Depth</td>
+                            <td>@pond.PumpCapacity</td>
+                            <td>@pond.DrainCount</td>
+                            <td>
+                                <!-- Thông số nước (có thể liên kết với bảng nước nếu có) -->
+                                <a href="#">View Parameters</a>
+                            </td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
@@ -45,77 +67,46 @@
         <div id="productAddModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeAddModal()">&times;</span>
-                <h2 id="modalTitle">Thêm bạn cá Koi mới! </h2>
-                <form method="post" enctype="multipart/form-data" action="">
+                <h2 id="modalTitle">Thêm hồ mới mới! </h2>
+                <form method="post" enctype="multipart/form-data" action="" asp-page="/MyPond">
                     @Html.AntiForgeryToken()
-
-
                     <div class="form-content">
                         <div class="form-group">
                             <label for="Image">Add Image:</label>
-                            <input type="file" id="koiImage" name="Img" accept="image/*" required>
-
+                            <input type="file" id="PondImage" name="Img" accept="image/*" required>
                         </div>
 
                         <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="Name" placeholder="Enter name" required>
-
+                            <input type="text" id="name" name="newPond.Name" placeholder="Enter name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="age">Age:</label>
-                            <input type="number" id="age" name="Age" placeholder="Enter age" required min="0">
-
+                            <label for="size">Size (m^2):</label>
+                            <input type="number" id="size" name="newPond.Size" placeholder="Enter size" required min="0" step="any">
                         </div>
 
                         <div class="form-group">
-                            <label for="size">Size (cm):</label>
-                            <input type="number" id="size" name="Size" placeholder="Enter size" required min="0" step="any">
-
+                            <label for="pumpCapacity">Pump Capacity (L/min):</label>
+                            <input type="number" id="pumpCapacity" name="newPond.PumpCapacity" placeholder="Enter pump capacity" min="0" step="any">
                         </div>
 
                         <div class="form-group">
-                            <label for="weight">Weight (g):</label>
-                            <input type="number" id="weight" name="Weight" placeholder="Enter weight" required min="0" step="any">
-
+                            <label for="drainCount">Drain Count:</label>
+                            <input type="number" id="drainCount" name="newPond.DrainCount" placeholder="Enter drain count" min="0" step="1">
                         </div>
 
                         <div class="form-group">
-                            <label for="body">Body Shape:</label>
-                            <input type="text" id="body" name="Body" placeholder="Enter body shape">
-
+                            <label for="volume">Volume (m^3):</label>
+                            <input type="number" id="volume" name="newPond.Volume" placeholder="Enter volume" min="0" step="any">
                         </div>
 
                         <div class="form-group">
-                            <label for="sex">Sex:</label>
-                            <div class="content-sex">
-                                <input type="radio" id="male" name="Sex" value="Male" checked>
-                                <label for="male">Male</label>
-                                <input type="radio" id="female" name="Sex" value="Female">
-                                <label for="female">Female</label>
-                            </div>
+                            <label for="depth">Depth (m):</label>
+                            <input type="number" id="depth" name="newPond.Depth" placeholder="Enter depth" min="0" step="any">
                         </div>
 
-                        <div class="form-group">
-                            <label for="breed">Breed:</label>
-                            <input type="text" id="breed" name="Breed" placeholder="Enter breed" required>
-
-                        </div>
-
-                        <div class="form-group">
-                            <label for="origin">Origin:</label>
-                            <input type="text" id="origin" name="Origin" placeholder="Enter origin">
-
-                        </div>
-
-                        <div class="form-group">
-                            <label for="price">Price:</label>
-                            <input type="number" id="price" name="Price" placeholder="Enter price" step="any">
-
-                        </div>
-
-                        <button class="submit-button" type="submit">Add Koi</button>
+                        <button class="submit-button" type="submit">Add Pond</button>
                     </div>
                 </form>
             </div>

@@ -18,11 +18,6 @@ namespace Respositories1
 			_context = context;
 		}
 
-		public async Task<List<Koi>> GetAllKoi()
-		{
-			return await _context.Kois.ToListAsync();
-		}
-
 		public async Task<Koi?> GetById(int id)
 		{
 			return await _context.Kois.FindAsync(id);
@@ -30,9 +25,16 @@ namespace Respositories1
 
 		public async Task<int> AddKoi(Koi koi)
 		{
+			try
+			{
 				await _context.Kois.AddAsync(koi);
 				await _context.SaveChangesAsync();
 				return koi.KoiId;
+			}
+			catch (Exception) 
+			{ 
+				return -1;
+			}
 		}
 		
 		public async Task<bool> UpdateKoi(Koi koi)
@@ -69,5 +71,10 @@ namespace Respositories1
 				return false;
 			}
 		}
-	}
+
+        public async Task<List<Koi>> GetAllKoi(int userId)
+        {
+            return await _context.Kois.Where(p => p.UserId == userId).ToListAsync();
+        }
+    }
 }

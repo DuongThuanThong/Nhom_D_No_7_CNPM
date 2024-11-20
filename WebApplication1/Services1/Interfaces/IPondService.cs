@@ -1,4 +1,5 @@
 ﻿using Respositories1.Entities;
+using Services1.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace Services1.Interfaces
 {
     public interface IPondService
     {
-        Task<List<Pond>> GetAllPond();
+        Task<List<PondDTO>> GetAllPond(int userId);
         Task<Pond?> GetById(int id);
-        Task<bool> AddPond(Pond pond);
+        Task<bool> AddPond(PondDTO ponddto);
         Task<bool> UpdatePond(Pond pond);
         Task<bool> DeletePond(int id);
     }

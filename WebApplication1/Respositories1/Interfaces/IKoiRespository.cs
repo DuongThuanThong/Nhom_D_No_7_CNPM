@@ -9,7 +9,7 @@ namespace Respositories1.Interfaces
 {
 	public interface IKoiRespository
 	{
-		Task<List<Koi>> GetAllKoi();
+		Task<List<Koi>> GetAllKoi(int userId);
 		Task<Koi?>GetById(int id);
 		Task<int> AddKoi(Koi koi);
 		Task<bool> UpdateKoi(Koi koi);
