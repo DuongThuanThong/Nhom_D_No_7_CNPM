@@ -12,7 +12,7 @@ namespace Services1.Interfaces
     {
         Task<List<User>> GetAllUsers();
         Task<User?> GetUserById(int id);
-        Task<bool> AddUser(RegisterDTO registerdto);
+        Task<int?> AddUser(RegisterDTO registerdto);
         Task<bool> UpdateUser(User user);
         Task<bool> DeleteUser(int id);
         Task<User?> checkLogin(LoginDTO loginDTO);

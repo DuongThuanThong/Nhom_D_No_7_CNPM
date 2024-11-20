@@ -47,12 +47,12 @@ namespace WebApplication1.Pages
 
 
 
-                var register = await _userService.AddUser(registerUserInfo);
-                if (register)
+                var  userId = await _userService.AddUser(registerUserInfo);
+                if (userId.HasValue)
                 {
 
                     
-                    HttpContext.Session.SetString("UserId", registerUserInfo.Email);
+                    HttpContext.Session.SetString("UserId", userId.Value.ToString());
                     HttpContext.Session.SetString("Username", registerUserInfo.UserName);
 
                     return RedirectToPage("/Index");
@@ -62,6 +62,8 @@ namespace WebApplication1.Pages
                     ViewData["ErrorMessage"] = "Please try again!";
                     return Page();
                 }
+
+                
             }
             catch (Exception)
             {

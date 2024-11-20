@@ -1,0 +1,110 @@
+@page
+@model WebApplication1.Pages.cart.cart
+@{
+   
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/shopkoi.css"  />
+    <link rel="stylesheet" href="~/css/cart.css"  />
+     <link rel="stylesheet" href="~/css/product.css"  />
+      <link rel="stylesheet" href="~/css/contact.css"  />
+    <script src="https://kit.fontawesome.com/75bac81b76.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+     <link rel="icon" href="~/img/logo.png" type="image/png">
+    <title>Shop</title>
+
+</head>
+<body>
+    <div class="body2">
+    
+     @await Html.PartialAsync("_Navbar")
+
+    <div class="cart-container">
+        <div class="cart-product">
+            <div class="cart-product1">
+                <div class="product-title1">
+                    <div class="product-title2" style="margin-left: 140px;">SẢN PHẨM</div>
+                    <div class="product-title2">GIÁ</div>
+                    <div class="product-title2">SỐ LƯỢNG</div>
+                    <div class="product-title2">TỔNG PHỤ</div>
+                </div>
+            </div>
+            <hr class="hr-title" style="margin-left: 40px; margin-top: 20px; margin-bottom: 0;">
+            <div class="cart-product1">
+
+                <div class="cart-content-product" data-price="15000">
+            <i class="fa-solid fa-x" onclick="removeItem(this)" style="margin-left: 50px; z-index: 10;"></i>
+            <div class="cart-img"><img src="~/img/koiproduct.png" /></div>
+            <div class="cart-name-product">Medikoi Probiotic</div>
+            <div style="margin-top: 0; margin-left: 40px;">15,000 đ</div>
+            <div class="number-input" style="margin-top: 0;">
+                <div class="button" onclick="decrement(this)">-</div>
+                <input type="text" class="number" value="1" >
+                <div class="button" onclick="increment(this)">+</div>
+            </div>
+            <div class="subtotal" >15,000 đ</div>
+        </div>
+
+        <div class="cart-content-product" data-price="30000">
+            <i class="fa-solid fa-x" onclick="removeItem(this)" style="margin-left: 50px; z-index: 10;"></i>
+            <div class="cart-img"><img src="~/img/koiproduct1.png" /></div>
+            <div class="cart-name-product">Kusuri Wheatgerm</div>
+            <div style="margin-top: 0; margin-left: 40px;">30,000 đ</div>
+            <div class="number-input" style="margin-top: 0;">
+                <div class="button" onclick="decrement(this)">-</div>
+                <input type="text" class="number" value="1" >
+                <div class="button" onclick="increment(this)">+</div>
+            </div>
+            <div class="subtotal">30,000 đ</div>
+        </div>
+                
+                
+            </div>
+            <hr class="hr-content" style="margin-left: 40px; margin-top: 10px; margin-bottom: 0;">
+            <div class="contact-button" style="display:flex; justify-content: flex-end; margin-right:50px; margin-top:20px">
+                <button id="update-cart" onclick="updateCart()" >CẬP NHẬT GIỎ</button>
+            </div>
+        </div>
+
+        <div class="cart-totals">
+            <div class="totals-title">TỔNG GIỎ HÀNG</div>
+            <div class="cart-total-content">
+                <div >Tổng phụ</div>
+                <div class="total-price">0đ</div>
+            </div>
+            <hr class="hr-content" >
+            <div class="cart-total-content">
+                <div class="cart-shipping">Shipping</div>
+                <div class="content-shipping">Free shipping</div>
+            </div>
+            <hr class="hr-content">
+            <div class="cart-total-content">
+                <div class="VAT-content">VAT</div>
+                <div class="price" style="margin-top: 0px; font-size: 18px;">0đ</div>
+            </div>
+            <hr>
+            <div class="cart-total-content">
+                <div class="content-total" style=" font-size:22px;" >Tổng cộng</div>
+                <div  class="total-price-extra" style="margin-top: 0px;">0đ</div>
+            </div>
+            <div class="buy-button">
+                <button style="width:100%; margin-left:-10px;">TIẾN HÀNH THANH TOÁN</button>
+            </div>
+
+        </div>
+    </div>
+
+
+<script src="~/js/index.js"></script>
+<script src="~/js/button.js"></script>
+<script src="~/js/cart.js"></script>
+    
+</div>
+</body>

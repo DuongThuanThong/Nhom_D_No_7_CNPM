@@ -23,11 +23,11 @@ namespace Respositories1
         }
 
 
-        public async Task<User> AddUser(User user)
+        public async Task<int?> AddUser(User user)
         {
              await _context.AddAsync(user);
              await _context.SaveChangesAsync();
-            return user;
+            return user.UserId;
 
         }
 

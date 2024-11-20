@@ -1,0 +1,73 @@
+body{
+    background-color: white!important;
+    font-family: "Roboto", sans-serif;
+}
+.cart-container{
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.cart-product{
+    margin-left: 50px;
+}
+.product-title1{
+    display: flex;
+    display: grid;
+    grid-template-columns: 55% 1fr 1fr 1fr ;
+}
+.product-title2{
+    display: flex;
+}
+.cart-content-product{
+        display: flex;
+        display: grid;
+        grid-template-columns:1% 27% 21% 1fr 1fr 1fr;
+        align-items: center;
+}
+.cart-img img{
+    width:30%; margin-left: 130px;
+}
+.cart-name-product{
+   margin-left: 20px;
+}
+
+
+
+.totals-title{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.cart-totals{
+    border:3px solid rgb(238, 236, 236);
+    border-radius: 3px;
+    padding: 30px;
+    margin-right: 80px;
+}
+.cart-total-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.subtotal{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(224, 151, 15);
+    margin-top: 0; margin-left: 15px;
+}
+.total-price{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(224, 151, 15);
+}
+.total-price-extra{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(224, 151, 15);
+}

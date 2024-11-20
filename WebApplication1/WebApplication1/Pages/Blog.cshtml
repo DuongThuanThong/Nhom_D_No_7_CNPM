@@ -1,0 +1,142 @@
+@page
+@model WebApplication1.Pages.Blog
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Koi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Blog.css">
+</head>
+<body>
+     @await Html.PartialAsync("_Navbar")
+
+    <div class="page-1" id="home">
+        <div class="text">
+            <h1 class="content-1">KoiControl - Ứng dụng Koi cho ao của bạn</h1>
+            <p class="content">Quản lý các thông số nước, cá koi và ao của bạn trong ứng dụng cá koi của chúng tôi!</p>
+            <p>Với KoiControl, việc ghi chép dữ liệu về nước và cá koi trên giấy sẽ không còn là chuyện cũ nữa.</p>
+        </div>
+        <img src="/img/landing-mockup.png" alt="img-1">
+
+    </div>
+
+    <div class="page-2" id="Our">
+        <div class="text-2">
+            <h2 class="content-2">
+                Hãy chú ý đến các thông số nước của bạn!
+            </h2>
+            <p>
+                Là chủ ao, việc đo nước thường xuyên là một phần của cuộc sống hàng ngày. Theo dõi và lưu trữ các thông số nước của bạn trong KoiControl. Ứng dụng phân tích các thông số nước của bạn và đưa ra cho bạn các gợi ý về cách cải thiện chúng nếu cần thiết. Bằng cách này, bạn có thể cung cấp cho cá của mình các điều kiện tối ưu.
+            
+            </p>
+            <img src="/img/iphone.png" alt="img-2">
+        </div>
+    </div>
+
+    <div class="page-3" id="download">
+        <div class="text-3">
+            <h2 class="content-3">
+                Xác định lượng thức ăn lý tưởng!
+            </h2>
+            <p>
+               Cá koi của bạn cần bao nhiêu thức ăn để phát triển lý tưởng? Máy tính thức ăn tích hợp của chúng tôi sẽ cung cấp cho bạn câu trả lời. Dựa trên quần thể cá koi và nhiệt độ nước, máy tính thức ăn của chúng tôi sẽ tự động tính toán lượng thức ăn được khuyến nghị cho tham vọng tăng trưởng của bạn. Bạn thậm chí không cần biết trọng lượng của cá koi. KoiControl có thể xác định trọng lượng rất chính xác dựa trên chiều dài của cá.
+
+            
+            </p>
+            <img src="/img/iphone_food.png" alt="img-3">
+        </div>
+    </div>
+
+    <div class="page-4" id="use">
+        <div class="text-4">
+            <h2 class="content-4">
+                Nhận biết xu hướng sớm!
+            </h2>
+            <p>
+               Là chủ sở hữu cá koi, sự phát triển của cá và chất lượng nước là tối quan trọng. Với biểu đồ được tạo tự động của chúng tôi, bạn có thể thấy xu hướng và mối tương quan trong các thông số nước và tiềm năng của cá koi chỉ trong nháy mắt. Bạn có muốn chia sẻ thành công của mình với người khác hoặc ghi lại trong báo cáo theo mùa không? Sử dụng chức năng xuất PDF tích hợp của số liệu thống kê của bạn.
+
+            </p>
+            <img src="/img/iphone_stat.png" alt="img-4">
+        </div>
+    </div>
+
+    <div class="page-5">
+        <div class="text-5">
+            <h2 class="content-5">
+                Quản lý ao của bạn!
+            </h2>
+            <p>
+               Tất cả thông tin quan trọng như thể tích, tốc độ tuần hoàn, độ sâu và nhiều thông tin khác có thể được lưu trữ cho một ao. Bạn có nhiều ao không? Không vấn đề gì, các thông số về cá và nước có thể được chỉ định rõ ràng cho ao tương ứng.
+    
+            </p>
+            <img src="/img/iphone_pond.png" alt="img-5">
+        </div>
+    </div>
+
+    <div class="page-6">
+        <div class="text-6">
+            <h2 class="content-6">
+                Tính toán lượng muối phù hợp cho từng phương pháp điều trị!
+            </h2>
+            <p>
+               Muối là một công cụ phổ biến để điều trị bệnh cho cá koi, vì nó vừa rẻ vừa hiệu quả đối với một số ký sinh trùng hoặc tảo. Tuy nhiên, cần phải cẩn thận để đạt được nồng độ chính xác. Với máy tính muối, bạn có thể tính toán liều lượng chính xác cho từng ao nuôi mà không có lỗi và không cần máy tính.
+
+            </p>
+            <img src="/img/iphone_salt.png" alt="img-6">
+        </div>
+    </div>
+
+    <div class="page-7">
+        <div class="text-7">
+            <h2 class="content-7">
+                Dữ liệu của bạn trên mọi thiết bị!
+            </h2>
+            <p>
+               Bạn muốn sử dụng ứng dụng trên nhiều thiết bị? Với tài khoản KoiControl, bạn có thể dễ dàng quản lý dữ liệu của mình trên tất cả các thiết bị di động. Nếu bạn chỉ muốn sử dụng một thiết bị, tất nhiên bạn có thể sử dụng ứng dụng mà không cần tài khoản và chuyển dữ liệu của mình sau này nếu cần.
+               
+            </p>
+            <img src="/img/iphone_pond_multiple.png" alt="img-7">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <h2 id="imprint">
+                Imprint
+            </h2>
+
+            <h4>
+                KoiControl
+            </h4>
+
+            <p>
+                represented by:
+            </p>
+
+            <p>
+                Binder Andreas, Mayr Roman, Schimmer Manuel GbR
+            </p>
+
+            <p>
+                Caspar-David-Friedrich-Str. 11
+            </p>
+
+            <p>
+                85092 Kösching
+            </p>
+
+            <p>
+                Ust.-Id.: DE339744693
+            </p>
+
+            <p><a href="#">info@koicontrol.com</a></p>
+            <p><a href="#">Privacy policy</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

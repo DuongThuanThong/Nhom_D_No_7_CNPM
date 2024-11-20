@@ -20,7 +20,7 @@ namespace Services1
             _userRepository = userRepository;
             _memberRepository = memberRepository;
         }
-        public async Task<bool> AddUser(RegisterDTO registerdto)
+        public async Task<int?> AddUser(RegisterDTO registerdto)
         {
             try
             {
@@ -39,16 +39,15 @@ namespace Services1
                 var member = new Member
                 {
                     Phone = registerdto.Phone,
-                    UserId = newUser.UserId,
+                    UserId = newUser,
                 };
 
-                var newMember = await _memberRepository.AddMember(member);
-
-                return true;
+                await _memberRepository.AddMember(member);
+                return newUser;
             }
             catch (Exception)
             {
-                return false;
+                return -1;
             }
         }
 

@@ -7,8 +7,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://kit.fontawesome.com/75bac81b76.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=PT+Sans+Caption:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/Index.css" />
     <title>Trang chủ</title>
+
 </head>
 <body>
     <div class="background"></div>
@@ -24,9 +30,11 @@
             new { Link = "/MyPond", Img = Url.Content("~/img/pond.png"), Text = "My Pond" },
             new { Link = "#", Img = Url.Content("~/img/feed.png"), Text = "Tính lượng thức ăn" },
             new { Link = "#", Img = Url.Content("~/img/salt.png"), Text = "Tính lượng muối" },
-            new { Link = "#", Img = Url.Content("~/img/blog.png"), Text = "Blog" },
-            new { Link = "#", Img = Url.Content("~/img/shop.png"), Text = "Shop" },
-            new { Link = "#", Img = Url.Content("~/img/report.png"), Text = "Báo cáo" }
+            new { Link = "/Blog", Img = Url.Content("~/img/blog.png"), Text = "Blog" },
+            new { Link = "/shop/shop", Img = Url.Content("~/img/shop.png"), Text = "Shop" },
+            new { Link = "#", Img = Url.Content("~/img/report.png"), Text = "Báo cáo" },
+            new { Link = "/shop/contact", Img = Url.Content("~/img/contact.png"), Text = "Liên hệ" },
+            new { Link = "/shop/aboutus", Img = Url.Content("~/img/aboutus.png"), Text = "Giới thiệu" }
         })
         {
             <div class="item">

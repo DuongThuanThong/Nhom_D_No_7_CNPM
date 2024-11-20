@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\_Đồ_Án_CNPM\Nhom_D_No_7_CNPM\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,4 +48,44 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/aboutus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxhYm91dHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxjYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxjb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/homepage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxob21lcGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/menu/Koiproducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxtZW51XEtvaXByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/menu/Pondproducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxtZW51XFBvbmRwcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/product/Filtermedium.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxwcm9kdWN0XEZpbHRlcm1lZGl1bS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/product/Kusuri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxwcm9kdWN0XEt1c3VyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/product/Medikoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxwcm9kdWN0XE1lZGlrb2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_Đồ_Án_CNPM/Nhom_D_No_7_CNPM/WebApplication1/WebApplication1/Pages/shop/shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2hvcFxzaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
